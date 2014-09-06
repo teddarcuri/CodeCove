@@ -1,0 +1,22 @@
+@import "infobar";
+@import "utilities";
+@import "toolbar";
+
+#console {
+	position: relative;
+	height: 100%;
+	z-index: $z-console;
+	@include flex(1);
+	@include linear-gradient(45deg, #ddd, #fff);
+	background: url(../images/wavegrid.png);
+	//@include display(flex);
+}
+
+#console-container {
+	width: 100%; height: 100%;
+	margin-top: $infobar-height;
+	position: relative;
+	overflow: auto;
+	padding: 0px 20px;
+	padding-bottom: 100px; // This is to compensate for the "Utility Bar"
+}

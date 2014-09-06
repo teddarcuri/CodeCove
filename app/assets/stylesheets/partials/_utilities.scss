@@ -1,0 +1,78 @@
+ #utility-wrap {
+	width: 100%; height: auto;
+	position: absolute;
+	bottom: 0;
+  z-index: $z-utilitybelt;
+}
+
+.utility-container {
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    padding: 15px;
+    margin: auto;
+    position: relative;
+    box-shadow:   0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+
+#utility-belt {
+	width: 100%; height: 70px;
+	position: relative;
+	background: #FFFFFF;
+	z-index: $z-utilitybelt;
+	-moz-box-shadow:    0px 0px 2px 0px rgba(0,0,0,0.5);
+	box-shadow:         0px 0px 2px 0px rgba(0,0,0,0.5);
+	@include display(flex);
+
+	.logo {
+		display: inline-block;
+		position: relative;
+		height: 100%;
+		padding: 10px 25px;
+
+	}
+
+	.profile-utilities {
+		color: $cc-darkBlue;
+		display: inline-block;
+		height: 100%; width: auto;
+        @include bp (900) {
+            display: none;
+        }
+		.welcome-message {
+			display: inline-block;
+			height: 100%;
+			margin: 0;
+			padding: 0px 10px;
+			cursor: pointer;
+			//@include linear-gradient(top, #f7f7f7, #fff);
+			&:hover {
+				background: #fff;
+				img[src="/images/gear-icon.svg"] {
+					@include transform(rotate(360deg));
+				}
+				img[src="/images/collapse-icon.svg"] {
+					@include transform(translateY(5px));
+				}
+			}
+			img {
+				@include transition(all ease 0.5s);
+				height: 100%;
+				padding: 25px 0px;
+				margin-left: 10px;
+				vertical-align: middle;
+				&[src="/images/collapse-icon.svg"] {
+					padding: 27px 0px;
+				}
+			}
+		}
+	}
+}
+
+.utilities {
+	width: 100%; height: 0px;
+	background: $cc-grey;
+	z-index: $z-search;
+	position: relative;
+	@include transition(all ease 0.5s);
+}

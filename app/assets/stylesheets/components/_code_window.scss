@@ -1,0 +1,122 @@
+.code-window-wrapper {
+	width: 33.33%;
+	padding: 15px;
+	float: left;
+	margin: auto;
+	position: relative;
+	@include transition(all ease 0.5s);
+
+	@include bp(1200) {
+		width: 50%;
+	}
+	@include bp(750) {
+		width: 100%;
+	}
+
+	// Full screen code window
+	&.full-screen {
+		position: absolute;
+		padding: 0px;
+		z-index: 9999 !important;
+		.CodeMirror {
+			border-radius: 0px;
+			height: 100%;
+		}
+	}
+
+	// When draggin
+	&.is-dragging .code-window {
+	//	border: solid 2px #eee;
+		box-shadow: 0px 0px 10px $cc-lightBlue;
+	}
+}
+
+.code-window {
+	width: 100%; height: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+	padding-bottom: 35px;
+
+	.loading-code-window {
+		height: 100%; width: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		background: url(../images/loading.gif) no-repeat center center rgba(255,255,255,0.9);
+		z-index: $z-console + 1;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	// Codemirror text area
+	textarea {
+		top: 40px; left: 0;
+		width: 100%;
+		background: #fff !important;
+	}
+
+	.CodeMirror {
+	  border-radius: 10px 10px 0px 0px;
+	  //max-height: 450px;
+	  height: 100%;
+	  padding: 10px;
+	  background: #fff !important;
+	  font-family: 'Monaco', sans-serif !important;
+	  font-size: 0.8em;
+	  //letter-spacing: 1px;
+
+	  & textarea {
+	  	font-family: 'Monaco', sans-serif !important;
+	  }
+	}
+	.code-window-toolbar {
+		width: 100%; height: 35px;
+		position: absolute;
+		bottom: 0;
+		cursor: move;
+		border-radius: 0px 0px 10px 10px;
+
+		@include linear-gradient(to top, $cc-lightBlue, lighten($cc-darkBlue, 30%) );
+
+		.code-window-controls {
+			position: absolute;
+			right: 0;
+			background: rgba(0,0,0,0.15);
+			height: 100%; width: auto;
+			padding: 7px;
+			box-shadow: -4px 0px 2px rgba(0,0,0,0.1);
+			cursor: pointer;
+			div {
+				height: 17px; width: 17px;
+				border: solid 1px rgba(0,0,0,0.35);
+				display: inline-block;
+				border-radius: 200%;
+				margin: 0px 2px;
+				&.maximize:hover {
+					background: $green;
+				}
+				&.minimize:hover {
+					background: $yellow;
+				}
+				&.close:hover {
+					background: red;
+				}
+			}
+		}
+	}
+
+	.code-window-info {
+		color: #fff;
+		font-size: 0.9em;
+		padding: 0px 10px;
+		position: absolute;
+		left: 0;
+		padding-right: 100px;
+		max-height: 100%;
+		line-height: 2.5em;
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+}

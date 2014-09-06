@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+// CSS Browser reset
+@import "config/normalize";
+
+// Pesticide CSS Debugger
+//@import "config/pesticide";
+
+// Bourbon Sass Library
+@import "bourbon";
+
+// Settings | Mixins, Variables
+@import "config/variables";
+@import "config/mixins";
+@import "config/fonts";
+
+// Structural Elements
+@import "partials/sidebar";
+@import "partials/console";
+@import "partials/search_overlay";
+
+// Components
+@import "components/search_form";
+@import "components/code_window";
+@import "components/codemirror";
+@import "components/tile";
+
+// Codemirror themes
+@import "codemirror_themes/neo.scss";
+
+
+////////////////////////////////////////////////
+// This global app wrapper uses Flexbox which
+// allows the sidebar and the main console to
+// resize fluidly with each other
+///////////////////////////////////////////////
+.app-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #eee;
+    @include display(flex);
+}
+
+.flex {
+    padding: 0px 20px;
+    @include display(flex);
+    @include flex-wrap(wrap);
+}

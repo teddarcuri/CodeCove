@@ -1,0 +1,14 @@
+h1 {
+    font-size: 3em;
+    margin: 0px;
+    line-height: 1em;
+    padding: 30px ;
+    color: #aaa;
+    display: block;
+    width: 100%;
+    //background: rgba(255,255,255,0.9);
+    text-transform: uppercase;
+    &.search-display {
+        line-height: 1em;
+    }
+}

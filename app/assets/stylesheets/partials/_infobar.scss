@@ -1,0 +1,121 @@
+#infobar {
+	@include flex-grow(1);
+	width: 100%; height: $infobar-height;
+	background: $cc-grey;
+	position: absolute;
+	top: 0;
+	z-index: $z-infobar;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	@include display(flex);
+	@include justify-content(space-between);
+	.home-icon, .sidebar-icon {
+		position: relative;
+		height: 100%;
+		display: inline-block;
+		cursor: pointer;
+		border-right: solid 1px darken($cc-grey, 10%);
+		&:hover {
+			background: darken($cc-grey, 3%);
+		}
+		img {
+			position: relative;
+			height: 30px;
+			padding: 7px 20px;
+		}
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+		position: relative;
+		height: 100%;
+		li {
+			position: relative;
+			height: 100%;
+			display: inline-block;
+			float: left;
+			padding: 0px;
+			&:hover {
+				ul.sub-menu {
+					display: block !important;
+				}
+			}
+			ul.sub-menu {
+				display: none;
+				position: absolute;
+				background: rgba(255,255,255,0.9);
+				list-style: none;
+				top: $infobar-height;
+				left: 0px;
+				padding: 0px;
+				text-align: left;
+
+				li {
+					a {
+						min-width: 160px;
+						padding: 10px 10px 10px 10px;
+						display: block;
+						border-bottom: solid 1px #ddd;
+						color: #222;
+						font-size: 0.9em;
+						text-decoration: none;
+						&:hover {
+							color: #fff;
+							background: rgba(0,0,0,0.8);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sidebar-icon-blue {
+		background: $cc-lightBlue !important;
+		&:hover {
+			background: $cc-darkBlue !important;
+		}
+	}
+
+	.breadcrumbs {
+		vertical-align: top;
+		height: 100%;
+		display: inline-block;
+		color: $cc-darkBlue;
+		font-size: 0.75em;
+		position: relative;
+		line-height: 2.5em;
+		padding-left: 10px;
+	}
+
+	// Iterate over the tile layout icons
+	$icons: "one-column", "two-column", "three-column";
+
+	.layout-options {
+		display: inline-block;
+		height: 100%;
+		text-align: right; // This makes the icons display on the right without having to float them
+		@include flex-grow(1);
+		padding-right: 10px;
+		div {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			height: 100%;
+			width: 40px;
+			padding: 10px;
+
+			@each $column-icon in $icons {
+				&.#{$column-icon} {
+					background: url(../images/#{$column-icon}-icon.svg) no-repeat center center;
+					background-size: 22px;
+					&:hover, &.active {
+						background: #fff;
+						background: url(../images/#{$column-icon}-icon-mo.svg) no-repeat center center #fff;
+						background-size: 22px;
+						box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+					}
+				}
+			}
+		}
+	}
+}

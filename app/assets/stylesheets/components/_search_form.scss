@@ -1,0 +1,42 @@
+form {
+	position: relative;
+	display: inline-block;
+	width: auto; height: 100%;
+	@include flex-grow(1);
+	.react-circle {
+		height: 20px; width: 20px;
+		border: solid 3px $cc-lightBlue;
+		border-radius: 200%;
+		position: absolute;
+		top: 50%; left: 10px;
+		margin-top: -10px;
+		@include transition(all ease 0.5s);
+	}
+	.react {
+		border: solid 10px $cc-lightBlue;
+		@include transition(all ease 0.5s);
+		@include transform(scale(0.5));
+	}
+	input {
+		outline: none;
+		border: none;
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		position: absolute;
+		border: solid 1px #ccc;
+		border-top: none; border-bottom: none;
+		padding: 10px 10px 10px 40px;
+		font-size: 1em;
+		color: #777;
+		@include transition(all ease 0.5s);
+		@include linear-gradient(top, #f7f7f7, #fff);
+		&:hover {
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+		}
+		&:focus {
+			color: #333;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+		}
+	}
+}
