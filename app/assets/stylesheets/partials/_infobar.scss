@@ -106,11 +106,11 @@
 
 			@each $column-icon in $icons {
 				&.#{$column-icon} {
-					background: url(../images/#{$column-icon}-icon.svg) no-repeat center center;
+					background: image-url('#{$column-icon}-icon.svg') no-repeat center center;
 					background-size: 22px;
 					&:hover, &.active {
 						background: #fff;
-						background: url(../images/#{$column-icon}-icon-mo.svg) no-repeat center center #fff;
+						background: image-url('#{$column-icon}-icon-mo.svg') no-repeat center center #fff;
 						background-size: 22px;
 						box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 					}

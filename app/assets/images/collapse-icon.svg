@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="138px" height="84px" viewBox="0 0 138 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>collapse-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="collapse-icon" sketch:type="MSLayerGroup" fill="#5ABACF">
+            <g id="Welcome" sketch:type="MSShapeGroup">
+                <g id="Triangle-1-+-Rectangle-93">
+                    <path d="M59.3659784,53.3569941 L47.2421665,53.568616 L68.7918006,84.0273586 L89.2653125,52.8350993 L77.7520305,53.0360644 L77.7520305,37.0996311 L59.3659784,37.0996311 L59.3659784,53.3569941 L59.3659784,53.3569941 Z" id="Triangle-1"></path>
+                    <rect id="Rectangle-93" x="0" y="0" width="138" height="23"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

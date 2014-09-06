@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="27px" viewBox="0 0 28 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Collection-View" sketch:type="MSArtboardGroup" transform="translate(-874.000000, -918.000000)" fill="#FFFFFF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(886.500000, 931.500000) rotate(46.000000) translate(-886.500000, -931.500000) translate(884.000000, 914.000000)">
+                <path d="M0,5.52631579 L0,29.0131579 L5,29.0131579 L5,5.52631579 L0,5.52631579 Z M3.40909091,6.67763158 C3.15805239,6.67763158 2.95454545,6.88502016 2.95454545,7.13477164 L2.95454545,27.1744389 C2.95454545,27.4269104 3.16539418,27.6315789 3.40909091,27.6315789 C3.66012943,27.6315789 3.86363636,27.4241904 3.86363636,27.1744389 L3.86363636,7.13477164 C3.86363636,6.88230016 3.65278764,6.67763158 3.40909091,6.67763158 Z" id="Rectangle-58" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-52" sketch:type="MSShapeGroup" x="0" y="2.76315789" width="5" height="2.30263158"></rect>
+                <path d="M0,29.4736842 L1.58957741,32.9114412 L3.6328125,32.9114412 L5,29.4736842 L0,29.4736842 Z" id="Rectangle-53" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-56" sketch:type="MSShapeGroup" x="0" y="0" width="5" height="2.30263158"></rect>
+                <path d="M1.81818182,33.3881579 L3.40909091,33.3881579 L2.61363636,35 L1.81818182,33.3881579 Z" id="Triangle-2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

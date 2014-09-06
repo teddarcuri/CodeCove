@@ -1,0 +1,119 @@
+<!-- Global Application Flexbox Wrapper -->
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar-item add">
+			<span class="item-name">Add Code</span>
+		</div>
+
+        {{#link-to 'languages'}}
+		<div class="sidebar-item languages">
+			<span class="item-name">Languages</span>
+		</div>
+        {{/link-to}}
+
+        {{#link-to 'collections'}}
+		<div class="sidebar-item collections">
+			<span class="item-name">Collections</span>
+		</div>
+        {{/link-to}}
+
+		<!-- User Saved Collections -->
+		<hr class="collection-divider">
+
+        {{#each collection}}
+            <div class="sidebar-item collection">
+                <span class="item-name">Grunt Setups</span>
+                <span class="single-collection-name">Grunt Setups and</span>
+            </div>
+        {{/each}}
+
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Console -->
+	<div id="console">
+        <!-- Infobar -->
+		<div id="infobar">
+			<ul>
+				<li>
+					<a title="Click to toggle the sidebar or simply press the Control key" class="sidebar-icon">
+                        <%= image_tag "full-screen-icon.svg"  %>
+                    </a>
+				</li>
+				<li>
+					<a title="Codecove Home" class="home-icon" href="/">
+						<%= image_tag "home-icon.svg"  %>
+					</a>
+					<ul class="sub-menu">
+						<li><a href="#">Share Collection</a></li>
+						<li><a href="#">Go Home</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span>
+
+	      <div class="layout-options">
+	        <div class="one-column"></div>
+			<div class="two-column"></div>
+			<div class="three-column active"></div>
+	      </div>
+		</div>
+        <!-- End Info Bar -->
+
+        <!-- Main App Area | Where the magic happens -->
+        <div id="console-container">
+	    	{{outlet}}
+		</div>
+        <!-- End Main App Area -->
+
+        <!-- Utility Wrap -->
+		<div id="utility-wrap">
+
+			<!-- Utility Belt -->
+			<div id="utility-belt">
+				<!-- Code Cove Logo -->
+				<%= image_tag "logo.svg", :class => "logo" %>
+
+				<!-- Search Form -->
+				<form action="">
+					<input type="text" class="search" name="search" placeholder="SEARCH">
+					<div class="react-circle"></div>
+				</form>
+
+
+				<!-- Welcome/Login Message -->
+				<div class="profile-utilities">
+					<p class="welcome-message">
+						Welcome back, Tedd!
+						<%= image_tag "gear-icon.svg" %>
+					</p>
+				</div>
+			</div>
+			<!-- End Utility Belt -->
+
+			<!-- Toolbar -->
+			<div id="toolbar-wrap">
+				<div id="toolbar">
+					<div class="tool-item add"><p>Add To Collection</div>
+					<div class="tool-item edit"><p>Edit Collection</div>
+					<div class="tool-item pin"><p>Pin Collection to Sidebar</div>
+					<div class="tool-item info"><p>Collection Information</div>
+					<!-- <div class="tool-item grid"><p>Snap to Grid</div> -->
+				</div>
+			</div>
+			<!-- End Toolbar -->
+
+			<!-- Utility Box -->
+			<div class="utilities">
+				<div class="container utility-container">
+					<h1>Lets fix this up</h1>
+				</div>
+			</div>
+
+		</div>
+		<!-- End Utility Wrap -->
+
+</div><!-- End App Container -->

@@ -1,0 +1,12 @@
+<h1>Collections</h1>
+
+<ul>
+    {{#each}}
+    {{#link-to 'collection' this}}
+    <li class="tile">
+        <%= image_tag('collections-icon.svg') %><br>
+        <span>{{name}}</span>
+    </li>
+    {{/link-to}}
+    {{/each}}
+</ul>
