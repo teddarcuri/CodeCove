@@ -1,4 +1,4 @@
-Codecove.Store = DS.Store.extend({
+Codecove.ApplicationStore = DS.Store.extend({
 
 });
 

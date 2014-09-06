@@ -22,4 +22,7 @@
 // for more details see: http://emberjs.com/guides/application/
 Codecove = Ember.Application.create();
 
+// Tells Ember how to make requests to the server
+Codecove.ApplicationAdapter = DS.RESTAdapter;
+
 //= require_tree .
