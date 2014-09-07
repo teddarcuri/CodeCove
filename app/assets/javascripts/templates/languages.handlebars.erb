@@ -1,0 +1,11 @@
+<h1>Languages</h1>
+
+<ul>
+    {{#each}}
+    {{#link-to 'language' this}}
+    <li {{bind-attr class="name :tile :language"}}>
+        <span>{{name}}</span>
+    </li>
+    {{/link-to}}
+    {{/each}}
+</ul>

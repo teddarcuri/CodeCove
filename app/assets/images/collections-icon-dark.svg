@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="45px" viewBox="0 0 28 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>collections-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.131,4.079 L0.131,29.976 C0.131,31.093 1.045,32.1 2.167,32.223 L17.861,33.952 C18.985,34.076 19.897,33.14 19.897,31.859 L19.897,2.195 C19.897,0.916 18.983,-0.021 17.861,0.102 L2.167,1.831 C1.042,1.955 0.131,2.96 0.131,4.079 L0.131,4.079 Z"></path>
+        <path id="path-3" d="M-0.343,3.609 L-0.343,29.506 C-0.343,30.623 0.571,31.63 1.694,31.753 L17.388,33.482 C18.512,33.605 19.424,32.67 19.424,31.389 L19.424,1.727 C19.424,0.447 18.51,-0.49 17.388,-0.366 L1.694,1.362 C0.569,1.486 -0.343,2.49 -0.343,3.609 L-0.343,3.609 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="collections-icon" sketch:type="MSLayerGroup">
+            <g id="Clipped">
+                <mask id="mask-2" sketch:name="SVGID_1_" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M0.131,4.079 L0.131,29.976 C0.131,31.093 1.045,32.1 2.167,32.223 L17.861,33.952 C18.985,34.076 19.897,33.14 19.897,31.859 L19.897,2.195 C19.897,0.916 18.983,-0.021 17.861,0.102 L2.167,1.831 C1.042,1.955 0.131,2.96 0.131,4.079 L0.131,4.079 Z" id="Shape" stroke="#B9B9B9" stroke-width="8" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+            <g id="Clipped" transform="translate(8.000000, 11.000000)">
+                <mask id="mask-4" sketch:name="SVGID_3_" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="SVGID_3_"></g>
+                <path d="M-0.343,3.609 L-0.343,29.506 C-0.343,30.623 0.571,31.63 1.694,31.753 L17.388,33.482 C18.512,33.606 19.424,32.67 19.424,31.39 L19.424,1.727 C19.424,0.447 18.51,-0.49 17.388,-0.366 L1.694,1.362 C0.569,1.486 -0.343,2.49 -0.343,3.609 L-0.343,3.609 Z" id="Shape" stroke="#B9B9B9" stroke-width="8" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
