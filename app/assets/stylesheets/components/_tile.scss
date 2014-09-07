@@ -18,7 +18,7 @@
 
   // Loop over each language for the tile backgrounds
   &.language {
-      @each $language in PHP, Ruby, Sass, Swift, Javascript {
+      @each $language in PHP, Python, Ruby, Sass, Swift, Javascript, Java, CSS, HTML, C, Git, Bash {
           &.#{$language} {
               padding-top: 80px;
               background: image-url('#{$language}.svg') no-repeat center 15px #eee;
