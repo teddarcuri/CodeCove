@@ -2,7 +2,7 @@
 
 Codecove.Router.map(function() {
   // Code
-  this.resource('code');
+  this.resource('codes');
 
   //Collections
   this.resource('collections');

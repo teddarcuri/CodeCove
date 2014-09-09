@@ -3,9 +3,11 @@
 
     <!-- Sidebar -->
     <div id="sidebar">
+        {{#link-to 'codes'}}
         <div class="sidebar-item add">
 			<span class="item-name">Add Code</span>
 		</div>
+        {{/link-to}}
 
         {{#link-to 'languages'}}
 		<div class="sidebar-item languages">
@@ -22,7 +24,7 @@
 		<!-- User Saved Collections -->
 		<!-- <hr class="collection-divider"> -->
 
-        {{#each collection}}
+        {{#each 'collection'}}
             <div class="sidebar-item collection">
                 <span class="item-name">Grunt Setups</span>
                 <span class="single-collection-name">Grunt Setups and</span>
