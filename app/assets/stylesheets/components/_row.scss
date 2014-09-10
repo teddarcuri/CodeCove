@@ -1,0 +1,22 @@
+.row {
+    width: 100%; height: auto;
+    text-align: left;
+    display: inline-block;
+    border-radius: 0px;
+    padding: 20px;
+    font-size: 1.25em;
+
+    @for $i from 1 through 20  {
+        &:nth-child( #{$i} ) {
+            background: lighten($cc-darkBlue, $i * 2.75);
+            &:hover {
+                background: lighten($cc-darkBlue, $i * 0.5);
+            }
+        }
+    }
+
+    span {
+        font-weight: 700;
+        color: #fff;
+    }
+}

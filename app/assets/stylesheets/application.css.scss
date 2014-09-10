@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require_self
+ *= require codemirror
+ *= require codemirror/themes/neo
  */
 
 // CSS Browser reset
@@ -35,6 +37,8 @@
 @import "components/code_window";
 @import "components/codemirror";
 @import "components/tile";
+@import "components/row";
+@import "components/language-bar";
 
 // Codemirror themes
 @import "codemirror_themes/neo.scss";

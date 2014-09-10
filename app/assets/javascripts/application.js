@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require codemirror
+//= require codemirror/modes/ruby
 //= require handlebars
 //= require ember
 //= require ember-data
@@ -23,11 +25,6 @@ Codecove = Ember.Application.create();
 
 // Tells Ember how to make requests to the server
 Codecove.ApplicationAdapter = DS.RESTAdapter;
-
-// Handlebar Helpers
-Handlebars.registerHelper('toLowerCase', function(str) {
-  return str.toLowerCase();
-});
 
 //= require_tree .
 
@@ -73,7 +70,7 @@ $(document).on("click", ".profile-utilities", function(){
 // Search Form
 
 // Focus
-$(".search").on("focus", function(){
+$(document).on("focus", ".search", function(){
     $(this).siblings(".react-circle").addClass("react");
     $(".utilities").css({"height" : 0});
     $(".search-overlay").show();
@@ -85,11 +82,11 @@ $(".search").on("focus", function(){
     });
 });
 
-$(".search").on("mouseover", function(){
+$(document).on("mouseover", ".search", function(){
     $(this).siblings(".react-circle").addClass("react");
 });
 
-$(".search").on("mouseout", function(){
+$(document).on("mouseout", ".search", function(){
     if ( $(".search-overlay").is(":visible") == false ) {
         $(this).siblings(".react-circle").removeClass("react");
     }
@@ -102,23 +99,6 @@ $(".search").on("blur", function(){
 });
 
 
-///////////////////////////////////////////////////
-//*** Come Back and Remove when migrating to back end platform
-////////////////////////////////////////////////
-
-// // Code Mirror
-// // Loop over all textareas with '.codemirror-textarea' class and apply a special id that Codemirror can use
-// $('textarea.codemirror-textarea').each(function(index) {
-//     $(this).attr('id', 'code-' + index);
-//     CodeMirror.fromTextArea(document.getElementById('code-' + index), {
-//             lineNumbers: true,
-//             tabMode: "indent",
-//             mode: "ruby",
-//             theme: "neo",
-//             //keyMap: "vim"
-//         }
-//     );
-// });
 
 // Set Z-index for overlapping windows
 // Increments from 801 each time a window is clicked
