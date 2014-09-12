@@ -93,11 +93,10 @@ $(document).on("mouseout", ".search", function(){
 });
 
 // Blur
-$(".search").on("blur", function(){
+$(document).on("blur", ".search", function(){
     $(this).siblings(".react-circle").removeClass("react");
     $(".search-overlay").hide();
 });
-
 
 
 // Set Z-index for overlapping windows

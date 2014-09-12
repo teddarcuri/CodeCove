@@ -3,7 +3,8 @@
 Codecove.Router.map(function() {
   // Code
   this.resource('codes', function() {
-      this.route('new', { path: '/codes/new'});
+    this.resource('code', {path: '/codes/:code_id'});
+    this.route('new');
   });
 
   //Collections
