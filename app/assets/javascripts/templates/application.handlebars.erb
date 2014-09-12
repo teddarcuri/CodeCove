@@ -49,8 +49,24 @@
 						<%= image_tag "home-icon.svg"  %>
 					</a>
 					<ul class="sub-menu">
-						<li><a href="#">Share Collection</a></li>
-						<li><a href="#">Go Home</a></li>
+				        <li>
+				        {{#link-to 'codes'}}
+							Add Code
+						{{/link-to}}
+						</li>
+
+						<li>
+						{{#link-to 'languages'}}
+							Languages
+						{{/link-to}}
+						</li>
+
+						<li>
+				        {{#link-to 'collections'}}
+							Collections
+				        {{/link-to}}
+
+						</li>
 					</ul>
 				</li>
 			</ul>
