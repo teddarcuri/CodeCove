@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+#Codemirror for syntax highlighting and text editor feel
 gem 'codemirror-rails'
 
 # bundle exec rake doc:rails generates the API under doc/api.

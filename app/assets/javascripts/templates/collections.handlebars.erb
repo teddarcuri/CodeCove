@@ -1,10 +1,11 @@
-<h1><%= image_tag('collections-icon-dark.svg') %>Collections</h1>
-<ul>
+<ul class="trench">
+
     {{#each}}
-    {{#link-to 'collection' this class="row"}}
     <li>
-        <span>{{name}}</span>
+        {{#link-to 'collection' this}}
+        <span class="name">{{name}}</span>
+        <p>{{description}}</p>
+        {{/link-to}}
     </li>
-    {{/link-to}}
     {{/each}}
 </ul>
