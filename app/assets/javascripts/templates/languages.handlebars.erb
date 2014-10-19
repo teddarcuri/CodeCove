@@ -1,13 +1,10 @@
-<h1>Languages</h1>
-
-<ul>
+<ul class="trench">
     {{#each}}
     {{#link-to 'language' this}}
-    <li {{bind-attr class="name :tile :language"}}>
+    <li {{bind-attr class="name :language"}}>
         <span>{{name}}</span>
     </li>
     {{/link-to}}
     {{/each}}
 </ul>
 
-<h3>Don't see a language you use? Add your own!</h3>
