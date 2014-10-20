@@ -2,6 +2,6 @@
 
 Codecove.CollectionRoute = Ember.Route.extend({
     model: function(params){
-        return collection.findBy('id', params.collection_id);
+        return this.store.find('collection', params.collection_id);
     }
 });
