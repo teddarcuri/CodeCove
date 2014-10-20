@@ -30,6 +30,7 @@
 // Structural Elements
 @import "partials/sidebar";
 @import "partials/console";
+@import "partials/trench";
 @import "partials/search_overlay";
 
 // Components
@@ -37,7 +38,6 @@
 @import "components/code_window";
 @import "components/codemirror";
 @import "components/tile";
-@import "components/trench";
 @import "components/row";
 @import "components/language-bar";
 

@@ -1,10 +1,13 @@
 <ul class="trench">
     {{#each}}
-    {{#link-to 'language' this}}
     <li {{bind-attr class="name :language"}}>
+    	{{#link-to 'language' this}}
         <span>{{name}}</span>
-    </li>
-    {{/link-to}}
+    	{{/link-to}}
+    </li>	
     {{/each}}
 </ul>
 
+<div class="container">
+	{{outlet}}
+</div>

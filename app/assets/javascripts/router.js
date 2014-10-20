@@ -8,10 +8,12 @@ Codecove.Router.map(function() {
   });
 
   //Collections
-  this.resource('collections');
-  this.resource('collection', { path: '/collections/:collection_id'});
+  this.resource('collections', function(){
+        this.resource('collection', { path: ':collection_id'});
+  });
 
   //Languages
-  this.resource('languages');
-  this.resource('language', { path: '/languages/:language_id'});
+  this.resource('languages', function(){
+      this.resource('language', { path: ':language_id'});
+  });
 });

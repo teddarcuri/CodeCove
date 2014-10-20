@@ -1,11 +1,12 @@
 <ul class="trench">
-
     {{#each}}
     <li>
         {{#link-to 'collection' this}}
         <span class="name">{{name}}</span>
-        <p>{{description}}</p>
         {{/link-to}}
     </li>
     {{/each}}
 </ul>
+<div class="container">
+	{{outlet}}
+</div>

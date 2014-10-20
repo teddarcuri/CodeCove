@@ -1,5 +1,6 @@
 .active {
-	background: red;
+	background: $cc-lightBlue;
+	color: #fff !important;
 }
 
 // Aqua Sidebar fixed to the left of the screen
@@ -14,6 +15,11 @@
 	height: 100% !important; width: $sidebar-width;
 	position: relative;
 	z-index: $z-sidebar;
+
+	// Active Link 
+	.active {
+		background: red !important;
+	}
 
 	// Items
 	.sidebar-item {
