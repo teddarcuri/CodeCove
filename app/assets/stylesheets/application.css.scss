@@ -18,7 +18,6 @@
 // CSS Browser reset
 @import "config/normalize";
 
-
 // Bourbon Sass Library
 @import "bourbon";
 
@@ -37,9 +36,6 @@
 @import "components/search_form";
 @import "components/code_window";
 @import "components/codemirror";
-@import "components/tile";
-@import "components/row";
-@import "components/language-bar";
 
 // Codemirror themes
 @import "codemirror_themes/neo.scss";
