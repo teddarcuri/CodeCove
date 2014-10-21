@@ -2,5 +2,6 @@
 
 Codecove.Collection = DS.Model.extend({
   name: DS.attr('string'),
-  description: DS.attr('string')
+  description: DS.attr('string'),
+  codes: DS.hasMany('code')
 });
