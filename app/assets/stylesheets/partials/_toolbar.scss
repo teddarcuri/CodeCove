@@ -40,46 +40,46 @@
 		}
 		// Add
 		&.add {
-			background: url(../images/add-icon.svg) no-repeat 10px center;
+			background: url(../assets/add-icon.svg) no-repeat 10px center;
 			background-size: 20px;
 			&:hover {
-				background: url(../images/add-icon.svg) no-repeat 10px center #000;
+				background: url(../assets/add-icon.svg) no-repeat 10px center #000;
 				background-size: 20px;
 			}
 		}
 		// pin
 		&.pin {
-			background: url(../images/collection-icon.svg) no-repeat 10px center;
+			background: url(../assets/collection-icon.svg) no-repeat 10px center;
 			background-size: 15px;
 			&:hover {
-				background: url(../images/collection-icon.svg) no-repeat 10px center #000;
+				background: url(../assets/collection-icon.svg) no-repeat 10px center #000;
 				background-size: 15px;
 			}
 		}
 		// Info
 		&.info {
-			background: url(../images/info-icon.svg) no-repeat 10px center;
+			background: url(../assets/info-icon.svg) no-repeat 10px center;
 			background-size: 25px;
 			&:hover {
-				background: url(../images/info-icon.svg) no-repeat 10px center #000;
+				background: url(../assets/info-icon.svg) no-repeat 10px center #000;
 				background-size: 25px;
 			}
 		}
 		// Edit
 		&.edit {
-			background: url(../images/edit-icon.svg) no-repeat 10px center;
+			background: url(../assets/edit-icon.svg) no-repeat 10px center;
 			background-size: 25px;
 			&:hover {
-				background: url(../images/edit-icon.svg) no-repeat 10px center #000;
+				background: url(../assets/edit-icon.svg) no-repeat 10px center #000;
 				background-size: 25px;
 			}
 		}
 		// Grid
 		&.grid {
-			background: url(../images/grid-icon.svg) no-repeat 10px center;
+			background: url(../assets/grid-icon.svg) no-repeat 10px center;
 			background-size: 25px;
 			&:hover {
-				background: url(../images/grid-icon.svg) no-repeat 10px center #000;
+				background: url(../assets/grid-icon.svg) no-repeat 10px center #000;
 				background-size: 25px;
 			}
 		}

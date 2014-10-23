@@ -59,11 +59,11 @@ $(document).on("click", ".profile-utilities", function(){
     if ( $utilities.height() > 0 ) {
         // Hide
         $utilities.css({"height" : 0});
-        $(".welcome-message").children("img").attr("src", "/images/gear-icon.svg");
+        $(".welcome-message").children("img").attr("src", "/assets/gear-icon.svg");
     } else {
         // Show
         $utilities.css({"height" : height});
-        $(".welcome-message").children("img").attr("src", "/images/collapse-icon.svg");
+        $(".welcome-message").children("img").attr("src", "/assets/collapse-icon.svg");
     }
 });
 
