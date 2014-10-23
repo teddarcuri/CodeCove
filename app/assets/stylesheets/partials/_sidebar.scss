@@ -18,7 +18,9 @@
 
 	// Active Link 
 	.active {
-		background: red !important;
+		.sidebar-item {
+			border: solid 2px #fff;
+		}
 	}
 
 	// Items
