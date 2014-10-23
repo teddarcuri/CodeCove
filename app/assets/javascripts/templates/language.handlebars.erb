@@ -1,8 +1,26 @@
 <h1>{{name}}</h1>
+<hr />
 
-{{#each language}}
-        <h3>hello</h3>
-    {{else}}
-        <h2>You don't have any code in {{name}}</h2>
-        <a href="#">Add Some</a>
-{{/each}}
+{{#if codes}}
+	{{#each code in codes}}
+		<div id="code" class="code-window-wrapper">
+	    <div class="code-window">
+	        <textarea class="codemirror-textarea">
+	            {{code.body}}
+	        </textarea>
+
+	        <div class="code-window-toolbar">
+	          <div class="code-window-info">
+	              {{code.name}}
+	          </div>
+	          <div class="code-window-controls">
+	            <div class="maximize"></div>
+	            <div class="minimize"></div>
+	          </div>
+	        </div>
+	    </div>
+	</div>
+	{{/each}}
+{{else}}
+	<h2>You currently don't have any code in {{name}}.</h2>
+{{/if}}

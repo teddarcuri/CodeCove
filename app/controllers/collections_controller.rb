@@ -5,7 +5,7 @@ class CollectionsController < ApplicationController
     end
 
     def show
-        render json: Collection.find(params[:id]).codes
+        render json: Collection.find(params[:id])
     end
 
 end

@@ -34,12 +34,12 @@
 .code-window {
 	width: 100%; height: 100%;
 	display: inline-block;
-	border-radius: 5px;
+	//border-radius: 5px;
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
-	padding-bottom: 35px;
+	padding-top: 35px;
 
 	.loading-code-window {
 		height: 100%; width: 100%;
@@ -58,7 +58,7 @@
 	}
 
 	.CodeMirror {
-	  border-radius: 10px 10px 0px 0px;
+	  //border-radius: 10px 10px 0px 0px;
 	  //max-height: 450px;
 	  height: 100%;
 	  padding: 10px;
@@ -74,8 +74,8 @@
 	.code-window-toolbar {
 		width: 100%; height: 35px;
 		position: absolute;
-		bottom: 0;
-		border-radius: 0px 0px 10px 10px;
+		top: 0;
+		//border-radius: 0px 0px 10px 10px;
 
 		@include linear-gradient(to top, $cc-lightBlue, lighten($cc-darkBlue, 30%) );
 

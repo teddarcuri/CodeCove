@@ -112,3 +112,23 @@
 		// box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 	}
 }
+
+// Languages
+// Loop over each language for the tile backgrounds
+  .language {
+      @each $language in PHP, Python, Ruby, Sass, Swift, Javascript, Java, CSS, HTML, C, Git, Bash {
+          &.#{$language} {
+              padding-left: 50px;
+              background: image-url('#{$language}.svg') no-repeat 14px center;
+              background-size: 27px;
+              &:hover {
+                  background: image-url('#{$language}-mo.svg') no-repeat 14px center $cc-lightBlue;
+                  background-size: 27px;
+              }
+              &.active {
+              	background: image-url('#{$language}-mo.svg') no-repeat 14px center $cc-lightBlue;
+                background-size: 27px;
+              }
+          }
+      }
+  }

@@ -4,5 +4,6 @@ Codecove.Code = DS.Model.extend({
   name: DS.attr('string'),
   body: DS.attr('string'),
   description: DS.attr('string'),
-  collections: DS.hasMany('collection')
+  collections: DS.hasMany('collection'),
+  languages: DS.hasMany('language')
 });
