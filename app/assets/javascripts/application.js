@@ -67,6 +67,21 @@ $(document).on("click", ".profile-utilities", function(){
     }
 });
 
+$(window).resize( function(){
+    // Measure all the ui stuff involved
+    var $infoHeight = $("#infobar").height();
+    var $consoleHeight = $("#console").height();
+    var $beltHeight = $("#utility-belt").height();
+    var $utilities = $(".utilities");
+    var height = $consoleHeight - $infoHeight - $beltHeight;
+
+    if ( $utilities.height() > 0 ) {
+         // Resize
+        $utilities.css({"height" : height});
+        $(".welcome-message").children("img").attr("src", "/assets/collapse-icon.svg");
+    } 
+});
+
 // Search Form
 
 // Focus
