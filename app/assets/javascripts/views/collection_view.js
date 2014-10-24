@@ -2,6 +2,7 @@
 
 Codecove.CollectionView = Ember.View.extend({
   templateName: 'collection',
+  
   didInsertElement : function(){
   	Ember.run.schedule('afterRender', this, function(){
     	// Loop over all textareas with '.codemirror-textarea' class and apply a special id that Codemirror can use
