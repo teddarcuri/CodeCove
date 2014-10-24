@@ -1,7 +1,7 @@
 <ul class="trench">
     {{#each}}
     <li {{bind-attr class="name :language"}}>
-    	{{#link-to 'language' this}}
+    	{{#link-to 'language' this classBinding=":language"}}
         <span>{{name}}</span>
     	{{/link-to}}
     </li>	

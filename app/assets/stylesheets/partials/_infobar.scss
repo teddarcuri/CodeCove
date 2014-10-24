@@ -49,7 +49,7 @@
 				left: 0px;
 				padding: 0px;
 				text-align: left;
-				border-radius: 0px 0px 10px 10px;
+				border-radius: 0px 0px 5px 5px;
 				overflow: hidden;
 				height: auto;
 				//border: solid 2px #ccc;
@@ -58,7 +58,7 @@
 				li {
 					float: none !important;
 					height: auto !important;
-					background: $cc-lightBlue;
+					background: rgba(255,255,255,1);
 					display: block;
 
 					a {
@@ -66,11 +66,12 @@
 						padding: 12px 20px 12px 35px;
 						display: block;
 						//border-bottom: solid 1px #ddd;
-						color: #fff;
-						font-size: 0.9em;
+						color: #555;
+						font-size: 1em;
 						text-decoration: none;
 						&.active {
-							background-color: $cc-darkBlue;
+							color: #222 !important;
+							@include linear-gradient(bottom, #fff, whitesmoke);
 						}
 						&.add-code {
 							background-image: image-url("add-icon.svg") !important;
@@ -91,7 +92,7 @@
 							background-repeat: no-repeat;
 						}
 						&:hover {
-							color: #fff;
+							color: #fff !important;
 							background-color: rgba(0,0,0,0.8);
 						}
 					}
