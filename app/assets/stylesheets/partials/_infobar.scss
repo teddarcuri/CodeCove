@@ -66,11 +66,11 @@
 						padding: 12px 20px 12px 35px;
 						display: block;
 						//border-bottom: solid 1px #ddd;
-						color: #555;
+						color: $cc-lightBlue;
 						font-size: 1em;
 						text-decoration: none;
 						&.active {
-							color: #222 !important;
+							color: $cc-darkBlue !important;
 							@include linear-gradient(bottom, #fff, whitesmoke);
 						}
 						&.add-code {

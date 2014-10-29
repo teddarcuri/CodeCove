@@ -21,16 +21,6 @@
 		</div>
         {{/link-to}}
 
-		<!-- User Saved Collections -->
-		<!-- <hr class="collection-divider"> -->
-
-        {{#each 'collection'}}
-            <div class="sidebar-item collection">
-                <span class="item-name">Grunt Setups</span>
-                <span class="single-collection-name">Grunt Setups and</span>
-            </div>
-        {{/each}}
-
     </div>
     <!-- End Sidebar -->
 
@@ -65,7 +55,6 @@
 				        {{#link-to 'collections' class="collections"}}
 							Collections
 				        {{/link-to}}
-
 						</li>
 					</ul>
 				</li>
@@ -126,6 +115,7 @@
 			<!-- Utility Box -->
 			<div class="utilities">
 				<h1>Settings</h1>
+				{{outlet collections}}
 			</div>
 
 		</div>
