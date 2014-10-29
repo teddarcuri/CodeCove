@@ -51,7 +51,7 @@ GEM
       handlebars-source (> 1.0.0)
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
-    ember-source (1.7.0)
+    ember-source (1.8.0)
       handlebars-source (~> 1.0)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -129,8 +129,8 @@ DEPENDENCIES
   active_model_serializers
   bourbon
   codemirror-rails
-  ember-rails (~> 0.14)
-  ember-source (~> 1.1)
+  ember-rails
+  ember-source (= 1.8.0)
   jquery-rails
   mysql2
   rails (= 4.1.5)
