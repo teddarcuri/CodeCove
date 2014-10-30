@@ -1,7 +1,8 @@
 class LanguagesController < ApplicationController
 
     def index
-        render json: Language.all
+    	# Get languages in alphabetical order
+        render json: Language.order("name")
     end
 
     def show
