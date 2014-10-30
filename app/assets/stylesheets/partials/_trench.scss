@@ -14,7 +14,7 @@
 
 	li {
 		@include linear-gradient( top, #fff, whitesmoke ); // Awww, I sure do love me some whitesmoke.
-		border-bottom: solid 1px #eee;
+		border-bottom: solid 1px #ddd;
 		display: block;
 		&:hover {
 			a{
