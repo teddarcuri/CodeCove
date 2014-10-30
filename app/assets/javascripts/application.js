@@ -35,13 +35,15 @@ function sidebarToggle() {
     var sidebar = $("#sidebar");
     var icon = $(".sidebar-icon");
 
-    if (sidebar.width() > 0) {
+    if (sidebar.width() > 12) {
         // Hide
-        sidebar.animate({"width" : "0px"});
+        sidebar.animate({"width" : "12px"});
+        sidebar.find(".sidebar-item").fadeOut();
         icon.children('img').attr("src", "/assets/sidebar-icon.svg");
     } else {
         // Show
         sidebar.animate({"width" : "75px"});
+        sidebar.find(".sidebar-item").fadeIn();
         icon.children('img').attr("src", "/assets/full-screen-icon.svg");
     }
 }
