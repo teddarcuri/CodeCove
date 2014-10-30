@@ -1,17 +1,30 @@
 h1 {
-    font-size: 2.2em;
+    font-size: 3em;
     margin: 0px;
-    line-height: 1em;
-    padding: 20px ;
-    color: #aaa;
+    color: $cc-lightBlue;
     display: block;
     width: 100%;
-    //background: rgba(255,255,255,0.9);
-    //background: $cc-lightBlue;
     text-transform: uppercase;
-    &.search-display {
-        line-height: 1em;
-    }
+}
+
+h2 {
+    color: #aaa;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #aaa;
+    font-size: 1.6em;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+    color: $cc-lightBlue;
 }
 
 ul {
