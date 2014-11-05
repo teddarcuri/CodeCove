@@ -48,10 +48,10 @@
 			//@include linear-gradient(top, #f7f7f7, #fff);
 			&:hover {
 				background: #fff;
-				img[src="/images/gear-icon.svg"] {
+				img[src="/assets/gear-icon.svg"] {
 					@include transform(rotate(360deg));
 				}
-				img[src="/images/collapse-icon.svg"] {
+				img[src="/assets/collapse-icon.svg"] {
 					@include transform(translateY(5px));
 				}
 			}

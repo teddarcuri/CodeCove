@@ -41,6 +41,18 @@
 	box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.27);
 	border-right: solid 5px $cc-lightBlue;
 	color: $cc-lightBlue !important;
+	@each $language in PHP, Python, Ruby, Sass, Swift, Javascript, Java, CSS, HTML, C, Git, Bash {
+      &.#{$language} {
+          padding-left: 50px;
+          background: image-url('#{$language}-mo.svg') no-repeat 14px center $cc-lightBlue !important;
+          background-size: 27px;
+          &:hover {
+              background: image-url('#{$language}-mo.svg') no-repeat 14px center $cc-lightBlue;
+              background-size: 27px;
+          }
+          
+      }
+  }
   }
 
    // Loop over each language for the tile backgrounds
