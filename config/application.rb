@@ -22,5 +22,9 @@ module Codecove
 
     # Allows for Codemirror assets to be precompiled
     config.assets.precompile += ["codemirror*", "codemirror/**/*"]
+
+    # Forces the application to not access the DB or load any models when precompiling assets
+    config.assets.initialize_on_precompile = false
+
   end
 end

@@ -34,12 +34,21 @@ GEM
       ember-source
       execjs
       handlebars-source
+    bcrypt (3.1.7)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
     builder (3.2.2)
     codemirror-rails (4.5)
       railties (>= 3.0, < 5)
+    devise (3.2.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     ember-data-source (1.0.0.beta.9)
       ember-source
     ember-rails (0.15.0)
@@ -69,6 +78,7 @@ GEM
     minitest (5.4.1)
     multi_json (1.10.1)
     mysql2 (0.3.16)
+    orm_adapter (0.5.0)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -121,6 +131,8 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -129,6 +141,7 @@ DEPENDENCIES
   active_model_serializers
   bourbon
   codemirror-rails
+  devise
   ember-rails (~> 0.14)
   ember-source (~> 1.1)
   jquery-rails
