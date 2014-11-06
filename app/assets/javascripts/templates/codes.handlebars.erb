@@ -1,8 +1,14 @@
-<h1>Create new Code</h1>
-<form action="">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <input type="textarea" id="Codemirror">
-  <input type="button" value="Create Code">
-</form>
+<div class="trench">
+	{{#each}}
+	<li>
+		{{#link-to 'code' this}}
+			{{name}}
+		{{/link-to}}
+	</li>
+	{{/each}}
+</div>
+
+<div class="container">
+	{{outlet}}
+</div>
+
