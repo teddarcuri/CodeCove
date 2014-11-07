@@ -12,7 +12,7 @@
 	.container {
 		width: 100%;
 		position: absolute;
-		padding-left: $trench-width; // Compensate for sidebar
+		padding-left: $trench-width - 10; // Compensate for sidebar
 	}
 }
 

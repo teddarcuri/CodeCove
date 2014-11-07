@@ -6,4 +6,15 @@ class CodesController < ApplicationController
     def show
         render json: Code.find(params[:id])
     end
+
+    def create
+    	sleep 1
+    	render json: Code.create(code)
+    end
+
+
+    private
+		def code
+			params[:code].permit(:name, :description, :body)
+		end
 end

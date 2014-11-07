@@ -1,13 +1,24 @@
-<h3>Create New Code Snippet</h3>
+<h1>Create New Code Snippet</h1>
 
-<form action="">
+<form {{action 'create' this on='submit'}}>
+
+	{{#if isSaving}}
+		<h4>Saving Code</h4>
+	{{/if}}
 	
 	<p>
-		{{input type="text" value=name}}
+		<label for="name">Code Name</label>
+		{{input type="text" name="name" value=name}}
 	</p>
 
 	<p>
-		{{textarea value=body class='codemirror-textarea'}}
+		<label for="name">Code Description</label>
+		{{textarea value=description name="description"}}
+	</p>
+
+	<p>
+		<label for="name">Code Body</label>
+		{{textarea value=body name="body" class='codemirror-textarea'}}
 	</p>
 
 	<button>Create</button>

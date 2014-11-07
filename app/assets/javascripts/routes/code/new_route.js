@@ -2,4 +2,11 @@
 
 Codecove.CodeNewRoute = Ember.Route.extend({
 
+	actions: {
+		create: function(code) {
+			code.save();
+			this.transitionTo('collections');
+		}
+	}
+
 });

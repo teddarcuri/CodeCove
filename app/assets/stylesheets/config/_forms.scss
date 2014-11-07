@@ -1,10 +1,14 @@
+form {
+	margin: 0px;
+}
+
 input {
 	outline: none;
 	border: none;
 	height: 100%;
 	width: 100%;
-	padding: 10px 10px 10px 40px;
-	font-size: 1em;
+	padding: 10px;
+	font-size: 1.2em;
 	color: #777;
 	@include transition(all ease 0.5s);
 }
@@ -19,4 +23,13 @@ input[type=button] {
 	border-radius: 5px;
 	width: auto;
 	background: $cc-lightBlue;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	outline: none;
+	border: none;
+	font-size: 1.2em;
+	color: #777;
 }
