@@ -27,9 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-# Ember.js Stuff
+# Serializer for Ember Data
 gem "active_model_serializers"
 
+# Ember rails
 gem "ember-rails", "~>0.14"
-
 gem "ember-source", "~>1.1"

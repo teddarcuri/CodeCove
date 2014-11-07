@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :collections
 
+  # This will fire up the initial Ember.js application intead of the default Rails page
   root :to => 'assets#index'
   get 'assets/index'
 
