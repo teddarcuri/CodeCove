@@ -11,6 +11,7 @@
 	background: image-url('wavegrid.png');
 	.container {
 		width: 100%;
+		position: absolute;
 		padding-left: $trench-width; // Compensate for sidebar
 	}
 }
