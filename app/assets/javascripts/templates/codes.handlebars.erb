@@ -1,12 +1,12 @@
-<div class="trench">
+<ul class="trench">
 	{{#each}}
 	<li>
 		{{#link-to 'code' this}}
-			{{name}}
+			 <span class="name">{{name}}</span>
 		{{/link-to}}
 	</li>
 	{{/each}}
-</div>
+</ul>
 
 <div class="container">
 	{{outlet}}
