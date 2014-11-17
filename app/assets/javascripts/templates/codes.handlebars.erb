@@ -3,6 +3,11 @@
 	<li>
 		{{#link-to 'code' this}}
 			 <span class="name">{{name}}</span>
+			 <span>
+			 	{{#each collection in collections}}
+			 		{{collection.name}}
+			 	{{/each}}
+			 </span>
 		{{/link-to}}
 	</li>
 	{{/each}}

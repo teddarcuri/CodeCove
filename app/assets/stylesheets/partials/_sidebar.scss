@@ -59,6 +59,10 @@
 			@include sidebarItemBg("add");
 		}
 
+		&.snippets {
+			@include sidebarItemBg("snippet");
+		}
+
 		// Languages
 		&.languages {
 			@include sidebarItemBg("languages");

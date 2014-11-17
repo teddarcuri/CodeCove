@@ -1,4 +1,4 @@
-<h1>Create New Code Snippet</h1>
+<h1>New Snippet</h1>
 
 <form {{action 'create' this on='submit'}}>
 
@@ -14,6 +14,7 @@
 
 	<p>
 		{{view Ember.Select 
+			multiple="true"
 			content=collections
 			optionValuePath="content.name"
 			optionLabelPath="content.name"
