@@ -13,7 +13,11 @@
 	</p>
 
 	<p>
-		{{view Ember.Select content=collections}}
+		{{view Ember.Select 
+			content=collections
+			optionValuePath="content.name"
+			optionLabelPath="content.name"
+		}}
 	</p>
 
 	<p>

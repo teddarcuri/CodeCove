@@ -5,6 +5,13 @@ Codecove.CodesNewRoute = Ember.Route.extend({
 		return this.store.createRecord('code');
 	},
 
+	setupController: function(controller, model) {
+		// Keeps default behavior, for some reason? IDK, MAN!
+		this._super(controller, model);
+		// Set the model to collect all collections
+		controller.set('collections', this.store.find('collection'));
+	},
+
 	// Save the Code
 	actions: {
 		create: function(code) {
