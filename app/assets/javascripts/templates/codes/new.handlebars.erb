@@ -1,47 +1,56 @@
-<h1>New Snippet</h1>
+<form class="single-code-form" {{action 'create' this on='submit'}}>
 
-<form {{action 'create' this on='submit'}}>
+	<div class="col-side">
 
-	<!-- Show this flag when the record is being saved -->
-	{{#if isSaving}}
-		<h4>Saving Code</h4>
-	{{/if}}
-	
-	<p>
-		<h4>Code Name</h4>
-		{{input type="text" name="name" value=name}}
-	</p>
+		<h1>New Snippet</h1>
+		<!-- Show this flag when the record is being saved -->
+		{{#if isSaving}}
+			<h4>Saving Code</h4>
+		{{/if}}
+		
+		<div class="col-2">
+			<h4>Code Name</h4>
+			{{input type="text" name="name" value=name}}
+		</div>
 
-	<p>
-		<h4>Collections</h4>
-		{{view Ember.Select 
-			multiple="true"
-			content=collections
-			optionValuePath="content.id"
-			optionLabelPath="content.name"
-		}}
-	</p>
+		<div class="col-2">
+			<h4>Code Description</h4>
+			{{textarea value=description name="description"}}
+		</div>
 
-	<p>
-		<h4>Languages</h4>
-		{{view Ember.Select 
-			multiple="true"
-			content=languages
-			optionValuePath="content.id"
-			optionLabelPath="content.name"
-		}}
-	</p>
+		<div class="col-3">
+			<h4>Collections</h4>
+			{{view Ember.Select 
+				multiple="true"
+				content=collections
+				optionValuePath="content.id"
+				optionLabelPath="content.name"
+			}}
+		</div>
 
-	<p>
-		<h4>Code Description</h4>
-		{{textarea value=description name="description"}}
-	</p>
+		<div class="col-3">
+			<h4>Languages</h4>
+			{{view Ember.Select 
+				multiple="true"
+				content=languages
+				optionValuePath="content.id"
+				optionLabelPath="content.name"
+			}}
+		</div>
 
-	<p>
-		<h4>Code Body</h4>
+
+		<button class="create-button">
+			{{#if isSaving}}
+				Saving Code
+			{{else}}
+				Save Code
+			{{/if}}
+		</button>
+
+	</div>
+
+	<div class="col-code">
 		{{textarea value=body name="body" class='codemirror-textarea'}}
-	</p>
-
-	<button>Create</button>
+	</div>
 
 </form>

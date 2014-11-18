@@ -1,0 +1,15 @@
+.create-button {
+	display: block;
+	background: $cc-lightBlue;
+	color: #fff;
+	padding: 15px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 7px;
+	margin: 10px 0px;
+	z-index: 9876543;
+	&:hover {
+		background: darken($cc-lightBlue, 10%);
+	}
+}
+

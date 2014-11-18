@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0.3'
 
 # Bourbon Sass Framework
 gem 'bourbon'
+# Neat Framework
+gem 'neat'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

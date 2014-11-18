@@ -9,11 +9,7 @@
 	@include flex(1);
 	@include linear-gradient(45deg, #ddd, #fff);
 	background: image-url('wavegrid.png');
-	.container {
-		width: 100%;
-		position: absolute;
-		padding-left: $trench-width - 10; // Compensate for sidebar
-	}
+	
 }
 
 #console-container {
@@ -22,4 +18,46 @@
 	position: relative;
 	overflow: auto;
 	padding-bottom: 100px; // This is to compensate for the "Utility Bar"
+	.container {
+		width: 100%;
+		@include display(flex);
+		padding-left: $trench-width - 10; // Compensate for sidebar
+		.ember-view {
+			width: 100%;
+		}
+	}
+}
+
+// Flexbox based Code View Columns
+.col-code {
+	@include flex-grow(1);
+	position: relative;
+	overflow: auto;
+	.CodeMirror{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0; left: 0;
+	}
+}
+
+.col-side {
+	overflow: auto;
+	width: 25%;
+	height: 100%;
+	padding: 10px;
+}
+
+//Bourbon Columns
+.col-1 {
+	height: auto;
+}
+
+.col-2 {
+	height: auto;
+}
+
+.col-3 {
+	height: auto;
 }
