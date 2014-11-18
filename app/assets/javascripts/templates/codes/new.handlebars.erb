@@ -8,17 +8,17 @@
 			<h4>Saving Code</h4>
 		{{/if}}
 		
-		<div class="col-2">
+		<div>
 			<h4>Code Name</h4>
 			{{input type="text" name="name" value=name}}
 		</div>
 
-		<div class="col-2">
+		<div>
 			<h4>Code Description</h4>
 			{{textarea value=description name="description"}}
 		</div>
 
-		<div class="col-3">
+		<div>
 			<h4>Collections</h4>
 			{{view Ember.Select 
 				multiple="true"
@@ -28,7 +28,7 @@
 			}}
 		</div>
 
-		<div class="col-3">
+		<div>
 			<h4>Languages</h4>
 			{{view Ember.Select 
 				multiple="true"

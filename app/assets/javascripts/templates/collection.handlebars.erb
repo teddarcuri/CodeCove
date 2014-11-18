@@ -1,20 +1,25 @@
-<h1>{{name}}</h1>
+<div class="padded">
 
-{{#each code in codes}}
-	<div id="code" class="code-window-wrapper">
-    <div class="code-window">
-        <textarea class="codemirror-textarea">{{unbound code.body}}</textarea>
+  <h1>{{name}}</h1>
 
-        <div class="code-window-toolbar">
-          <div class="code-window-info">
-              {{code.name}}
+  {{#each code in codes}}
+    <div id="code" class="code-window-wrapper">
+      <div class="code-window">
+          <textarea class="codemirror-textarea">{{unbound code.body}}</textarea>
+
+          <div class="code-window-toolbar">
+            <div class="code-window-info">
+                {{code.name}}
+            </div>
+            <div class="code-window-controls">
+              <div class="maximize"></div>
+              <div class="minimize"></div>
+            </div>
           </div>
-          <div class="code-window-controls">
-            <div class="maximize"></div>
-            <div class="minimize"></div>
-          </div>
-        </div>
 
-    </div>
+      </div>
+  </div>
+  {{/each}}
+  
 </div>
-{{/each}}
+

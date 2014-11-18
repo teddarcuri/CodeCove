@@ -26,6 +26,10 @@
 			width: 100%;
 		}
 	}
+
+	.padded {
+		padding: 20px;
+	}
 }
 
 // Flexbox based Code View Columns
@@ -43,21 +47,7 @@
 }
 
 .col-side {
-	overflow: auto;
 	width: 25%;
-	height: 100%;
 	padding: 10px;
-}
-
-//Bourbon Columns
-.col-1 {
-	height: auto;
-}
-
-.col-2 {
-	height: auto;
-}
-
-.col-3 {
-	height: auto;
+	position: relative;
 }

@@ -5,14 +5,14 @@
 .cm-s-neo.CodeMirror {
   background-color:#ffffff;
   color:#2e383c;
-  line-height:1.475;
+  line-height:1.6;
 }
-.cm-s-neo .cm-comment {color:#75787b; font-family: 'Monaco' !important;}
-.cm-s-neo .cm-keyword, .cm-s-neo .cm-property {color:#1d75b3; font-family: 'Monaco' !important;}
+.cm-s-neo .cm-comment {color:#75787b; font-family: 'Monaco' !important; font-weight: 700 !important;}
+.cm-s-neo .cm-keyword, .cm-s-neo .cm-property {color:#1d75b3; font-family: 'Monaco' !important;  font-weight: 700 !important;}
 .cm-s-neo .cm-atom,.cm-s-neo .cm-number {color:#75438a; font-family: 'Monaco' !important; font-weight: 700 !important;}
 .cm-s-neo .cm-node,.cm-s-neo .cm-tag {color: #C4825E;font-family: 'Monaco' !important; font-weight: 700 !important;}
-.cm-s-neo .cm-string {color:#DAAD78;font-family: 'Monaco' !important;}
-.cm-s-neo .cm-variable,.cm-s-neo .cm-qualifier {color:#7BA424;font-family: 'Monaco' !important;}
+.cm-s-neo .cm-string, .cm-error {color:#DAAD78;font-family: 'Monaco' !important; font-weight: 700 !important;}
+.cm-s-neo .cm-variable,.cm-s-neo .cm-qualifier {color:#7BA424;font-family: 'Monaco' !important; font-weight: 700 !important;}
 
 /* Editor styling */
 
