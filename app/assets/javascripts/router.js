@@ -2,7 +2,7 @@
 
 Codecove.Router.map(function() {
   // Code
-  this.resource('codes', function() {
+  this.resource('codes', {path: '/code'}, function() {
     this.resource('code', {path: ':code_id'});
     this.route('new');
   });
