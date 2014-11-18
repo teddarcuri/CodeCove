@@ -3,19 +3,7 @@
   <h1>{{name}}</h1>
 
   {{#each code in codes}}
-    <div id="code" class="code-window-wrapper">
-      <div class="code-window">
-          <textarea class="codemirror-textarea">{{unbound code.body}}</textarea>
-
-          <div class="code-window-toolbar">
-            <div class="code-window-info">
-                {{code.name}}
-            </div>
-
-          </div>
-
-      </div>
-  </div>
+    {{code-window name=code.name body=code.body}}
   {{/each}}
   
 </div>
