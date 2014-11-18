@@ -10,6 +10,7 @@ Codecove.CodesNewRoute = Ember.Route.extend({
 		this._super(controller, model);
 		// Set the model to collect all collections
 		controller.set('collections', this.store.find('collection'));
+		controller.set('languages', this.store.find('language'));
 	},
 
 	// Save the Code

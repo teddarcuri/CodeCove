@@ -8,26 +8,37 @@
 	{{/if}}
 	
 	<p>
-		<label for="name">Code Name</label>
+		<h4>Code Name</h4>
 		{{input type="text" name="name" value=name}}
 	</p>
 
 	<p>
+		<h4>Collections</h4>
 		{{view Ember.Select 
 			multiple="true"
 			content=collections
-			optionValuePath="content.name"
+			optionValuePath="content.id"
 			optionLabelPath="content.name"
 		}}
 	</p>
 
 	<p>
-		<label for="name">Code Description</label>
+		<h4>Languages</h4>
+		{{view Ember.Select 
+			multiple="true"
+			content=languages
+			optionValuePath="content.id"
+			optionLabelPath="content.name"
+		}}
+	</p>
+
+	<p>
+		<h4>Code Description</h4>
 		{{textarea value=description name="description"}}
 	</p>
 
 	<p>
-		<label for="name">Code Body</label>
+		<h4>Code Body</h4>
 		{{textarea value=body name="body" class='codemirror-textarea'}}
 	</p>
 
