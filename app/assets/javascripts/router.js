@@ -1,8 +1,10 @@
 // For more information see: http://emberjs.com/guides/routing/
 
 Codecove.Router.map(function() {
+
+  // Root
   // Code
-  this.resource('codes', {path: '/code'}, function() {
+  this.resource('codes', {path: '/'}, function() {
     this.resource('code', {path: ':code_id'});
     this.route('new');
   });

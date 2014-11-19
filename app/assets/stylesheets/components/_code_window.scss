@@ -117,5 +117,13 @@
 		line-height: 2.5em;
 		overflow-y: hidden;
 		overflow-x: auto;
+		a {
+			color: #fff;
+			padding: 3px 6px;
+			border-radius: 3px;
+			&:hover {
+				background: $cc-darkBlue;
+			}
+		}
 	}
 }
