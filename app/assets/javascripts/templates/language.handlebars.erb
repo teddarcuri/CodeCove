@@ -1,14 +1,11 @@
-<div class="padded">
-	
-	<h1>{{name}}</h1>
+<h1>{{name}}</h1>
 
-	{{#if codes}}
-		{{#each code in codes}}
-			{{code-window name=code.name body=code.body}}
-		{{/each}}
-	{{else}}
-		<h3>You currently don't have any code in {{name}}.</h3>
-	{{/if}}
+{{#if codes}}
+	{{#each code in codes}}
+		{{code-window name=code.name body=code.body}}
+	{{/each}}
+{{else}}
+	<h3>You currently don't have any code in {{name}}.</h3>
+{{/if}}
 
-</div>
 

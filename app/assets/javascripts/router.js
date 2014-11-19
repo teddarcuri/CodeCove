@@ -16,4 +16,7 @@ Codecove.Router.map(function() {
   this.resource('languages', function(){
       this.resource('language', { path: ':language_id'});
   });
+
+  // About
+  this.resource('about');
 });

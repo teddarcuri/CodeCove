@@ -1,10 +1,7 @@
-<div class="padded">
+<h1>{{name}}</h1>
 
-  <h1>{{name}}</h1>
-
-  {{#each code in codes}}
-    {{code-window name=code.name body=code.body}}
-  {{/each}}
+{{#each code in codes}}
+{{code-window name=code.name body=code.body}}
+{{/each}}
   
-</div>
 

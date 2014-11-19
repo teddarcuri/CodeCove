@@ -12,6 +12,7 @@
  *
  *= require_self
  *= require codemirror
+  *= require codemirror/themes/neo
  */
 
 // CSS Browser reset
@@ -40,7 +41,7 @@
 @import "components/buttons";
 
 // Codemirror themes
-@import "codemirror_themes/neo.scss";
+//@import "codemirror_themes/neo.scss";
 
 
 ////////////////////////////////////////////////
