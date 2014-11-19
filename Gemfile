@@ -35,3 +35,6 @@ gem "active_model_serializers"
 # Ember rails
 gem "ember-rails", "~>0.14"
 gem "ember-source", "~>1.1"
+
+# Moment Js Date formatting library
+gem 'momentjs-rails'
