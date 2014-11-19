@@ -13,13 +13,18 @@
 		padding: 7px;
 	}
 
+	.active {
+		@include linear-gradient( top, #eee, #ddd);
+	}
+
 	li {
 		@include linear-gradient( top, #fff, whitesmoke ); // Awww, I sure do love me some whitesmoke.
 		border-bottom: solid 1px #ddd;
 		display: block;
 		&:hover {
+			@include linear-gradient( top, whitesmoke, #eee );
 			a{
-				color: whitesmoke;
+				color: $cc-darkBlue;
 			}
 		}
 		a {
@@ -29,11 +34,6 @@
 			font-size: 18px;
 			font-family: 'Proxima Nova' !important;
 			color: $cc-lightBlue;
-		}
-
-		span.created-at {
-			color: #888;
-			font-size: 12px;
 		}
 	}
 }
