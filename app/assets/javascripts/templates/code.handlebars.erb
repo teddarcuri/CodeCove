@@ -9,6 +9,12 @@
 		{{/if}}
 
 		<p>
+			{{#each collection}}
+				{{collection.name}}
+	        {{/each}}
+		</p>
+
+		<p>
 			<span class="created_at">
 				Created: {{format-date created_at}}
 			</span>
@@ -29,15 +35,6 @@
 			<h4>Code Description</h4>
 			{{textarea value=description name="description"}}
 		</div>
-
-		<div class="col-3">
-			<h4>Collections</h4>
-		</div>
-
-		<div class="col-3">
-			<h4>Languages</h4>
-		</div>
-
 
 		<button class="create-button">
 			{{#if isSaving}}
