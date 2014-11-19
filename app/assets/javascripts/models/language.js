@@ -2,5 +2,5 @@
 
 Codecove.Language = DS.Model.extend({
   name: DS.attr('string'),
-  codes: DS.hasMany('code')
+  codes: DS.hasMany('code', {async: true})
 });
