@@ -8,13 +8,13 @@ class CodesController < ApplicationController
     end
 
     def create
-    	sleep 1
+    	sleep 3
     	render json: Code.create(code)
     end
 
 
     private
 		def code
-			params[:code].permit(:name, :description, :body, :collections, :languages)
+			params[:code].permit(:name, :description, :body)
 		end
 end

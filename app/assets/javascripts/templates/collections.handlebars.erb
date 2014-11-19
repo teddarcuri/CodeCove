@@ -1,12 +1,14 @@
-<ul class="trench">
-    {{#each}}
-    <li>
-        {{#link-to 'collection' this}}
-        <span class="name">{{name}}</span>
-        {{/link-to}}
-    </li>
-    {{/each}}
-</ul>
-<div class="container">
-	{{outlet}}
+<div class="flex">
+	<ul class="trench">
+	    {{#each}}
+	    <li>
+	        {{#link-to 'collection' this}}
+	        <span class="name">{{name}}</span>
+	        {{/link-to}}
+	    </li>
+	    {{/each}}
+	</ul>
+	<div class="container">
+		{{outlet}}
+	</div>
 </div>

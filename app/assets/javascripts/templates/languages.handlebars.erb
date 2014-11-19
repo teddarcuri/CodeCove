@@ -1,13 +1,17 @@
-<ul class="trench">
-    {{#each}}
-    <li {{bind-attr class="name :language"}}>
-    	{{#link-to 'language' this classBinding=":language"}}
-        <span>{{name}}</span>
-    	{{/link-to}}
-    </li>	
-    {{/each}}
-</ul>
+<div class="flex">
+	<ul class="trench">
+	    {{#each}}
+	    <li {{bind-attr class="name :language"}}>
+	    	{{#link-to 'language' this classBinding=":language"}}
+	        <span>{{name}}</span>
+	    	{{/link-to}}
+	    </li>	
+	    {{/each}}
+	</ul>
 
-<div class="container">
-	{{outlet}}
+	<div class="container padded">
+		{{outlet}}
+	</div>
 </div>
+
+

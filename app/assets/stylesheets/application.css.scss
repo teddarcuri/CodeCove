@@ -56,9 +56,3 @@
     background: #eee;
     @include display(flex);
 }
-
-.flex {
-    padding: 0px 20px;
-    @include display(flex);
-    @include flex-wrap(wrap);
-}

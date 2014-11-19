@@ -1,20 +1,31 @@
 <form class="single-code-form" {{action 'create' this on='submit'}}>
 
 	<div class="col-side">
-
-		<h1>New Snippet</h1>
-		<!-- Show this flag when the record is being saved -->
-		{{#if isSaving}}
-			<h4>Saving Code</h4>
+		<h1>
+		{{#if name}}
+			{{outputName}}
+		{{else}}
+			New Snippet
 		{{/if}}
+		</h1>
 		
 		<div>
-			<h4>Code Name</h4>
+			<h4>Name</h4>
 			{{input type="text" name="name" value=name}}
 		</div>
 
 		<div>
-			<h4>Code Description</h4>
+			<h4>Languages</h4>
+			{{view Ember.Select 
+				multiple="true"
+				content=languages
+				optionValuePath="content.id"
+				optionLabelPath="content.name"
+			}}
+		</div>
+
+		<div>
+			<h4>Description</h4>
 			{{textarea value=description name="description"}}
 		</div>
 
@@ -28,19 +39,9 @@
 			}}
 		</div>
 
-		<div>
-			<h4>Languages</h4>
-			{{view Ember.Select 
-				multiple="true"
-				content=languages
-				optionValuePath="content.id"
-				optionLabelPath="content.name"
-			}}
-		</div>
-
-
 		<button class="create-button">
 			{{#if isSaving}}
+				<%= image_tag "loading-small-aqua.gif" %> 
 				Saving Code
 			{{else}}
 				Save Code

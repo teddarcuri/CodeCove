@@ -2,6 +2,9 @@
 	display: block;
 	width: 100%;
 	background: $cc-lightBlue;
+	// background-image: image_url('loading-small-aqua.gif') !important;
+	// background-repeat: no-repeat;
+	// background-position: 20px center;
 	color: #fff;
 	padding: 15px;
 	font-size: 1.2em;
@@ -11,6 +14,9 @@
 	z-index: 9876543;
 	&:hover {
 		background: darken($cc-lightBlue, 10%);
+	}
+	&.saving {
+		background-image: image_url('loading-small-aqua.gif') !important;
 	}
 }
 

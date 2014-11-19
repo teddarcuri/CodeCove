@@ -4,6 +4,7 @@ form {
 
 	&.single-code-form {
 		@include display(flex);
+		height: 100%;
 	}
 
 }
@@ -14,7 +15,6 @@ input {
 	height: 100%;
 	width: 100%;
 	padding: 10px;
-	font-size: 1.2em;
 	color: #777;
 	@include transition(all ease 0.5s);
 }
