@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: Arcuril0g1n
-  socket: /tmp/mysql.sock
+  password: root
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 development:
   <<: *default
