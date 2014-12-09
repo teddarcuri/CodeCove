@@ -1,6 +1,10 @@
 // For more information see: http://emberjs.com/guides/routing/
 Codecove.CodesRoute = Ember.Route.extend({
     model: function() {
-        return this.store.find('code');
+        this.store.find('code');
+
+        return this.store.filter('code', function(code) {
+        	return !code.get('isNew');
+        });
     }
 });

@@ -1,3 +1,16 @@
-  {{#each}}
-    {{code-window name=name body=body code='code'}}
-  {{/each}}
+<ul class="trench">
+    {{#each}}
+    <li>
+        {{#link-to 'code' this}}
+        <span class="name">{{name}}</span><br>
+        <span class="created-at">Created: {{format-date created_at}}</span>
+
+        {{/link-to}}
+    </li>
+    {{/each}}
+</ul>
+<div class="container codes">
+	{{#each}}
+		{{code-window name=name body=body code='code'}}
+	{{/each}}
+</div>  
