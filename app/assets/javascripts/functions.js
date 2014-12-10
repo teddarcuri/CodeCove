@@ -5,9 +5,9 @@ function sidebarToggle() {
     var sidebar = $("#sidebar");
     var icon = $(".sidebar-icon");
 
-    if (sidebar.width() > 12) {
+    if (sidebar.width() > 0) {
         // Hide
-        sidebar.animate({"width" : "12px"});
+        sidebar.animate({"width" : "0px"});
         sidebar.find(".sidebar-item").fadeOut();
         icon.children('img').attr("src", "/assets/sidebar-icon.svg");
     } else {
