@@ -20,10 +20,11 @@ input {
 }
 
 select {
-	width: 100%; height: 300px;
+	width: 100%; height: auto;
 	border: none;
 	option {
-		padding: 12px;
+		padding: 7px;
+		font-size: 13px;
 		&:hover {
 			background: #eee !important;
 			cursor: pointer;

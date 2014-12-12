@@ -13,12 +13,12 @@
 			</h1>
 			
 			<div>
-				<h4>Name</h4>
+				<h3>Name</h3>
 				{{input type="text" name="name" value=name}}
 			</div>
 
 			<div>
-				<h4>Languages</h4>
+				<h3>Languages</h3>
 				{{view Ember.Select 
 					multiple="true"
 					content=languages
@@ -28,12 +28,12 @@
 			</div>
 
 			<div>
-				<h4>Description</h4>
+				<h3>Description</h3>
 				{{textarea value=description name="description"}}
 			</div>
 
 			<div>
-				<h4>Collections</h4>
+				<h3>Collections</h3>
 				{{view Ember.Select 
 					multiple="true"
 					content=collections

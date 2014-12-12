@@ -12,7 +12,6 @@ class CodesController < ApplicationController
     	render json: Code.create(code)
     end
 
-
     private
 		def code
 			params[:code].permit(:name, :description, :body)
