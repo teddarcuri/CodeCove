@@ -129,16 +129,3 @@ $(document).on("click", ".three-column", function(){
     $(".layout-options div").removeClass("active");
     $(this).addClass("active");
 });
-
-// Set the select boxes to be the height of their items
-// $(function () {
-
-//     $("select").each(function(){
-//         var objects = this.options;
-
-//         console.log(objects.length);
-
-//         this.attr("size", objects);
-//     });
-
-// });
