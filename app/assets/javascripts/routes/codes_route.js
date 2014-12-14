@@ -7,5 +7,5 @@ Codecove.CodesRoute = Ember.Route.extend({
         return this.store.filter('code', function(code) {
         	return !code.get('isNew');
         });
-    }
+    },
 });

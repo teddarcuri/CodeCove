@@ -16,13 +16,10 @@ Codecove.CodesNewRoute = Ember.Route.extend({
 	// Save the Code
 	actions: {
 		create: function(code) {
-
 			var route = this;
-
 			code.save().then(function(){
 				console.log("saved");
 			});
-
 		}
 	}
 });

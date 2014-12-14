@@ -11,17 +11,20 @@ form {
 
 input {
 	outline: none;
-	border: none;
 	height: 100%;
 	width: 100%;
 	padding: 10px;
 	color: #777;
+	border: solid 1px #ddd;
+	background: #fafafa;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 	@include transition(all ease 0.5s);
 }
 
 select {
 	width: 100%; height: auto;
 	border: none;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 	option {
 		padding: 7px;
 		font-size: 13px;
@@ -61,7 +64,10 @@ textarea {
 	width: 100%;
 	min-height: 200px;
 	outline: none;
-	border: none;
+	border: solid 1px #ddd;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	background: #fafafa;
+	border-radius: 7px;
 	font-size: 1em;
 	color: #777;
 }
