@@ -14,10 +14,10 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: root
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
+  password: Arcuril0g1n
+  #socket: /Applications/MAMP/tmp/mysql/mysql.sock
   # Need to change sockets because of stupid environment issues on work mac
-  #socket: /tmp/mysql.sock
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default

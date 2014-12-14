@@ -47,10 +47,6 @@ select {
 	}
 }
 
-input[type="textarea"] {
-	height: 200px;
-}
-
 input[type=button] {
 	color: #fff;
 	text-align: center !important;
@@ -62,7 +58,7 @@ input[type=button] {
 textarea {
 	display: block;
 	width: 100%;
-	min-height: 200px;
+	min-height: 100px;
 	outline: none;
 	border: solid 1px #ddd;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
@@ -70,4 +66,5 @@ textarea {
 	border-radius: 7px;
 	font-size: 1em;
 	color: #777;
+	padding: 10px;
 }
