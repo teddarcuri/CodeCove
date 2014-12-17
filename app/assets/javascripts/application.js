@@ -19,6 +19,7 @@
 //= require ember-data
 //= require moment
 //= require_self
+//= require showdown
 //= require ./codecove
 //= require ./functions
 

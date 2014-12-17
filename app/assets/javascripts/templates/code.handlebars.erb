@@ -35,7 +35,9 @@
 
 		<div>
 			<h4>Code Description</h4>
-			{{textarea value=description name="description"}}
+			<p>
+				{{format-markdown description}}
+			</p>
 		</div>
 
 		<button class="create-button">
