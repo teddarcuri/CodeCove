@@ -2,51 +2,16 @@
 
 	<div class="col-side">
 
-		<h1>{{name}}</h1>
-		<!-- Show this flag when the record is being saved -->
-		{{#if isSaving}}
-			<h4>Saving Code</h4>
-		{{/if}}
-
-		<p>
-			{{#if collections}}
-			yup
-			{{else}}
-			nope
-			{{/if}}
-		</p>
-
-		<p>
-			<span class="created_at">
-				Created: {{format-date created_at}}
-			</span>
-		</p>
-
-		<p>
-			<span class="updated_at">
-				Updated: {{format-date updated_at}}
-			</span>
-		</p>
-		
-		<div>
-			<h4>Code Name</h4>
-			{{input type="text" name="name" value=name}}
+		<div class="scrollable">
+			<h1>{{name}}</h1>
+			<hr>
+			<div>
+				<h4>Description</h4>
+				<p>
+					{{format-markdown description}}
+				</p>
+			</div>
 		</div>
-
-		<div>
-			<h4>Code Description</h4>
-			<p>
-				{{format-markdown description}}
-			</p>
-		</div>
-
-		<button class="create-button">
-			{{#if isSaving}}
-				Saving Code
-			{{else}}
-				Save Code
-			{{/if}}
-		</button>
 
 	</div>
 

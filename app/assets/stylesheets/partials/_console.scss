@@ -31,6 +31,9 @@
     		//@include flex-wrap(wrap);
     		@include align-items(stretch);
     		height: 100%;
+    		.ember-view {
+    			@include flex-grow(1);
+    		}
 	}
 	.padded {
 		padding: 20px;
