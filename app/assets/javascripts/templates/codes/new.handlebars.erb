@@ -22,7 +22,9 @@
 				<span>* Markdown supported</span>
 				{{textarea value=description name="description"}}
 				{{#if description}}
+				<p class="description">
 					{{markdown description}}
+				</p>
 				{{/if}}
 
 			</div>
