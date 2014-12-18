@@ -67,7 +67,6 @@
 	width: 35%;
 	height: 100%;
 	min-width: 350px;
-	padding: 15px 15px 55px 15px;
 	//overflow: auto;
 	position: relative;
 	@include bp(900) {
@@ -75,7 +74,10 @@
 	}
 
 	.scrollable {
-		padding-bottom: 25px;
+		padding-bottom: 0px;
+		&.has-button {
+			padding-bottom: 75px;
+		}
 	}
 }
 

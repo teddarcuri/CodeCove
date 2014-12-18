@@ -3,3 +3,10 @@
 <p>
 	<h3>Every snippet in Codecove can be organized by multiple languages.</h3>
 </p>
+	 {{#each}}
+	    <li {{bind-attr class="name :language"}}>
+	{{#link-to 'language' this classBinding=":language"}}
+	    <span>{{name}}</span>
+		{{/link-to}}
+	</li>	
+	{{/each}}

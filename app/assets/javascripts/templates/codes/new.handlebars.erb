@@ -3,7 +3,7 @@
 	<div class="col-side">
 
 		<!-- Scrollable section -->
-		<div class="scrollable">
+		<div class="scrollable has-button">
 			<h1>
 			{{#if name}}
 				{{name}}
@@ -21,7 +21,9 @@
 				<h3>Description</h3>
 				<span>* Markdown supported</span>
 				{{textarea value=description name="description"}}
-				{{description}}
+				{{#if description}}
+					{{markdown description}}
+				{{/if}}
 
 			</div>
 
@@ -62,7 +64,6 @@
 	</div>
 
 	<div class="col-code">
-		{{description}}
 		{{textarea value=body name="body" class="codemirror-textarea"}}
 	</div>
 
