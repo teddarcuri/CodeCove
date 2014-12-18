@@ -6,8 +6,7 @@ Codecove.CodesNewController = Ember.ObjectController.extend({
 	// Look into this
 	// TODO: Maybe ask someone at Ember meetup if they have any idea what's going on here?
 	collections: null,
-	languages: null,
-	outputName: Ember.computed.oneWay("name")
+	languages: null
 });
 
 /////////////////////////////////
