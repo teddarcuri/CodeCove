@@ -24,7 +24,9 @@
 //= require ./functions
 
 // for more details see: http://emberjs.com/guides/application/
-Codecove = Ember.Application.create();
+Codecove = Ember.Application.create({
+	 LOG_TRANSITIONS: true
+});
 
 // Tells Ember how to make requests to the server
 Codecove.ApplicationAdapter = DS.RESTAdapter;
