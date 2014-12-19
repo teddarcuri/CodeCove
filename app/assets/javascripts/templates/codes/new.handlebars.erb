@@ -29,7 +29,8 @@
 
 			</div>
 
-			<div>
+			{{#if languages}}
+			<div class="col-2">
 				<h3>Languages</h3>
 				{{view Ember.Select 
 					multiple="true"
@@ -39,8 +40,10 @@
 					size=languages.length
 				}}
 			</div>
+			{{/if}}
 
-			<div>
+			{{#if collections}}
+			<div class="col-2">
 				<h3>Collections</h3>
 				{{view Ember.Select 
 					multiple="true"
@@ -50,6 +53,7 @@
 					size=collections.length
 				}}
 			</div>
+			{{/if}}
 
 		</div>
 		

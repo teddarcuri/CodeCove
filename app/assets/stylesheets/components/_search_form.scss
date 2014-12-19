@@ -24,15 +24,21 @@ form#search {
 		width: 100%;
 		margin: auto;
 		position: absolute;
-		border: solid 1px #ccc;
+		border: solid 0px #ccc;
+		border-radius: 0px;
 		border-top: none; border-bottom: none;
 		padding: 10px 10px 10px 40px;
 		font-size: 1em;
 		color: #777;
+		border: solid 2px #fff;
+		border-top: 0px; border-bottom: 0px;
+		box-shadow: none;
 		@include transition(all ease 0.5s);
-		@include linear-gradient(top, #f7f7f7, #fff);
+		//@include linear-gradient(top, #f7f7f7, #fff);
 		&:hover {
-			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+			border: solid 2px #ddd;
+			border-top: 0px; border-bottom: 0px;
+			//box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
 		}
 		&:focus {
 			color: #333;

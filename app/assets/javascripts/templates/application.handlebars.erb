@@ -1,44 +1,44 @@
 <!-- Global Application Flexbox Wrapper -->
 <div class="app-container">
 
-    <!-- Sidebar -->
-    <div id="sidebar">
-        {{#link-to 'codes.new'}}
-        <div class="sidebar-item add">
+	<!-- Sidebar -->
+	<div id="sidebar">
+	    {{#link-to 'codes.new'}}
+	    <div class="sidebar-item add">
 			<span class="item-name">Add Code</span>
 		</div>
-        {{/link-to}}
+	    {{/link-to}}
 
-        {{#link-to 'codes'}}
-        <div class="sidebar-item snippets">
+	    {{#link-to 'codes'}}
+	    <div class="sidebar-item snippets">
 			<span class="item-name">Code Snippets</span>
 		</div>
-        {{/link-to}}
+	    {{/link-to}}
 
-        {{#link-to 'languages'}}
+	    {{#link-to 'languages'}}
 		<div class="sidebar-item languages">
 			<span class="item-name">Languages</span>
 		</div>
-        {{/link-to}}
+	    {{/link-to}}
 
-        {{#link-to 'collections'}}
+	    {{#link-to 'collections'}}
 		<div class="sidebar-item collections">
 			<span class="item-name">Collections</span>
 		</div>
-        {{/link-to}}
+	    {{/link-to}}
 
-    </div>
-    <!-- End Sidebar -->
+	</div>
+	<!-- End Sidebar -->
 
-    <!-- Console -->
+      <!-- Console -->
 	<div id="console">
-        <!-- Infobar -->
+		<!-- Infobar -->
 		<div id="infobar">
 			<ul>
 				<li>
 					<a title="Click to toggle the sidebar or simply press the Control key" class="sidebar-icon">
-                        <%= image_tag "full-screen-icon.svg"  %>
-                    </a>
+		                <%= image_tag "full-screen-icon.svg"  %>
+		            </a>
 				</li>
 				<li>
 					<a title="Codecove Home" class="home-icon" href="/">
@@ -72,23 +72,27 @@
 				</li>
 			</ul>
 
-			<span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span>
+			<!-- <span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span> -->
 
-	      <div class="layout-options">
-	        <div class="one-column"></div>
+		  {{#if showTileLayoutOptions}}
+		  <div class="layout-options">
+		         <div class="one-column"></div>
 			<div class="two-column"></div>
 			<div class="three-column active"></div>
-	      </div>
+		  </div>
+		  {{else}}
+		  	false
+		  {{/if}}
 		</div>
-        <!-- End Info Bar -->
+		<!-- End Info Bar -->
 
-        <!-- Main App Area | Where the magic happens -->
-        <div id="console-container">
-	    	{{outlet}}
+		<!-- Main App Area | Where the magic happens -->
+		<div id="console-container">
+			{{outlet}}
 		</div>
-        <!-- End Main App Area -->
+		<!-- End Main App Area -->
 
-        <!-- Utility Wrap -->
+	      <!-- Utility Wrap -->
 		<div id="utility-wrap">
 
 			<!-- Utility Belt -->
@@ -130,5 +134,6 @@
 
 		</div>
 		<!-- End Utility Wrap -->
+	</div>
 
 </div><!-- End App Container -->
