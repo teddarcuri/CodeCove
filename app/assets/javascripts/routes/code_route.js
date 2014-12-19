@@ -7,6 +7,7 @@ Codecove.CodeRoute = Ember.Route.extend({
     actions: {
     	update: function(code) {
     		code.save();
+    		this.controller.set('isEditing', false);
     	}
     }
 });
