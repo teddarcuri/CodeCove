@@ -1,0 +1,76 @@
+<form class="single-code-form" {{action 'update' this on='submit'}}>
+
+	<div class="col-side">
+
+		<!-- Scrollable section -->
+		<div class="scrollable has-button">
+			<h1>
+			{{#if name}}
+				{{name}}
+			{{else}}
+				Edit
+			{{/if}}
+			</h1>
+			
+			<div>
+				<h3 {{action "sayHello"}} >Name</h3>
+				{{input type="text" name="name" value=name}}
+			</div>
+
+			<div>
+				<h3>Description</h3>
+				<span>* Markdown supported</span>
+				{{textarea value=description name="description"}}
+				{{#if description}}
+				<p class="description">
+					{{markdown description}}
+				</p>
+				{{/if}}
+
+			</div>
+
+			{{#if languages}}
+			<div class="col-2">
+				<h3>Languages</h3>
+				{{view Ember.Select 
+					multiple="true"
+					content=languages
+					optionValuePath="content.id"
+					optionLabelPath="content.name"
+					size=languages.length
+				}}
+			</div>
+			{{/if}}
+
+			{{#if collections}}
+			<div class="col-2">
+				<h3>Collections</h3>
+				{{view Ember.Select 
+					multiple="true"
+					content=collections
+					optionValuePath="content.id"
+					optionLabelPath="content.name"
+					size=collections.length
+				}}
+			</div>
+			{{/if}}
+
+		</div>
+		
+		<!-- Bottom fixed button -->
+		<button class="create-button">
+			{{#if isSaving}}
+				<%= image_tag "loading-small-aqua.gif" %> 
+				Saving {{name}}
+			{{else}}
+				Update {{name}}
+			{{/if}}
+		</button>
+
+	</div>
+
+	<div class="col-code">
+		{{textarea value=body name="body" class="codemirror-textarea"}}
+	</div>
+
+</form>

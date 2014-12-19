@@ -12,6 +12,10 @@ class CodesController < ApplicationController
     	render json: Code.create(code)
     end
 
+    def update
+        render json: Code.find(params[:id]).tap { |s| s.update_attributes(code) }
+    end
+
     private
 		def code
 			params[:code].permit(:name, :description, :body)

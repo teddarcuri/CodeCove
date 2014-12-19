@@ -20,9 +20,21 @@ Codecove.CodesController = Ember.ObjectController.extend({
 // Single Code
 ////////////////////////////////
 Codecove.CodeController = Ember.ObjectController.extend({
+
+	isEditing: false,
+
 	actions: {
-    	sayHello: function() {
-    		alert("OH HAIE!");
+	    	sayHello: function() {
+	    		alert("OH HAIE!");
+	    	},
+
+	    	beginEditing: function() {
+	    		this.set("isEditing", true);
+	    	},
+
+	    	doneEditing: function() {
+	    		this.set("isEditing", false);
+	    	},
+
     	}
-    }
 });

@@ -1,14 +1,23 @@
+{{#if isEditing}}
+	{{partial "codes/edit"}}
+{{else}}
 <form class="single-code-form" {{action 'update' this on='submit'}}>
 
 	<div class="col-side">
 
-		<div class="scrollable">
+		<div class="scrollable has-button">
+
+			
 			<h1>{{name}}</h1>
 			<div>
 				<p class="description">
 					{{markdown description}}
 				</p>
 			</div>
+			<!-- Bottom fixed button -->
+			<button class="create-button" {{action 'beginEditing'}}>
+				Edit {{name}}
+			</button>
 		</div>
 
 	</div>
@@ -16,7 +25,8 @@
 	<div class="col-code">
 		{{textarea value=body name="body" class='codemirror-textarea'}}
 	</div>
-
 </form>
+{{/if}}
+
 
 

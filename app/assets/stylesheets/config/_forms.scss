@@ -5,6 +5,10 @@ form {
 	&.single-code-form {
 		@include display(flex);
 		height: 100%;
+		@include bp(600px) {
+			overflow: auto !important;
+			@include flex-wrap(wrap !important);
+		}
 	}
 
 }
@@ -23,6 +27,7 @@ input {
 }
 
 select {
+	border-radius: 7px;
 	width: 100%; height: auto;
 	border: none;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);

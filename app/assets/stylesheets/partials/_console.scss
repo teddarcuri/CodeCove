@@ -58,18 +58,18 @@
 		position: absolute;
 		top: 0; left: 0;
 	}
-	@include bp(900px) {
-		width: 100%;
+	@include bp(600px) {
+		width: 100% !important;
+		height: auto;
 	}
 }
 
 .col-side {
 	width: 35%;
 	height: 100%;
-	min-width: 350px;
-	//overflow: auto;
+	min-width: 300px;
 	position: relative;
-	@include bp(900) {
+	@include bp(600) {
 		width: 100%;
 	}
 
