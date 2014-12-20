@@ -8,7 +8,6 @@ class CodesController < ApplicationController
     end
 
     def create
-    	sleep 3
     	render json: Code.create(code)
     end
 
