@@ -1,40 +1,26 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+# Core Rails stuff
+gem 'rails', '4.1.5' # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'mysql2' # Use mysql as the database for Active Record
+gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
+gem 'sdoc', '~> 0.4.0',          group: :doc # bundle exec rake doc:rails generates the API under doc/api.
 
-# Use mysql as the database for Active Record
-gem 'mysql2'
+group :development  do
+	gem 'guard'
+	gem 'spring' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+### Libraries
+gem 'momentjs-rails' # Moment Js Date formatting library
+gem 'jquery-rails' # Use jquery as the JavaScript library
+gem 'codemirror-rails' #Codemirror for syntax highlighting and text editor feel
+gem 'sass-rails', '~> 4.0.3' # Use SCSS for stylesheets
+gem 'bourbon' # Bourbon Sass Framework
+gem 'neat' # Neat Framework
 
-# Bourbon Sass Framework
-gem 'bourbon'
-# Neat Framework
-gem 'neat'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-
-#Codemirror for syntax highlighting and text editor feel
-gem 'codemirror-rails'
-
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
-# Serializer for Ember Data
-gem "active_model_serializers"
-
-# Ember rails
+# Ember 
 gem "ember-rails"
 gem "ember-source", "~> 1.8.0"
+gem "active_model_serializers" # Serializer for Ember Data
 
-# Moment Js Date formatting library
-gem 'momentjs-rails'
