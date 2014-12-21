@@ -36,18 +36,24 @@
 		<div id="infobar">
 			<ul>
 				<li>
-					<a title="Click to toggle the sidebar or simply press the Control key" class="sidebar-icon">
+				   <a title="Click to toggle the sidebar or simply press the Control key" class="sidebar-icon">
 		                <%= image_tag "full-screen-icon.svg"  %>
-		            </a>
+		            	    </a>
 				</li>
 				<li>
-					<a title="Codecove Home" class="home-icon" href="/">
+					{{#link-to 'codes' class="home-icon"}}
 						<%= image_tag "home-icon.svg"  %>
-					</a>
+					{{/link-to}}
 					<ul class="sub-menu">
-				        <li>
-				        {{#link-to 'codes.new' class="add-code"}}
+				        	<li>
+				        	{{#link-to 'codes.new' class="add-code"}}
 							Add Code
+						{{/link-to}}
+						</li>
+
+						<li>
+				        	{{#link-to 'codes' class="add-code"}}
+							Code Snippets
 						{{/link-to}}
 						</li>
 
@@ -58,9 +64,9 @@
 						</li>
 
 						<li>
-				        {{#link-to 'collections' class="collections"}}
-							Collections
-				        {{/link-to}}
+					        {{#link-to 'collections' class="collections"}}
+								Collections
+					        {{/link-to}}
 						</li>
 
 						<li>

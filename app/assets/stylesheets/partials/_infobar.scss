@@ -46,53 +46,38 @@
 				position: absolute;
 				list-style: none;
 				top: $infobar-height;
-				left: 0px;
 				padding: 0px;
 				text-align: left;
 				border-radius: 0px 0px 5px 5px;
 				overflow: hidden;
 				height: auto;
+				width: 300px;
 				//border: solid 2px #ccc;
 				border-top: 0px;
+				background: #eee;
 				box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+				z-index: $z-infobar - 1;
 
 				li {
 					float: none !important;
 					height: auto !important;
-					background: rgba(255,255,255,0.8);
 					display: block;
+					border-bottom: solid 1px #ddd;
 
 					a {
 						min-width: 160px;
-						padding: 12px 20px 12px 35px;
+						padding: 12px 20px 12px 20px;
 						display: block;
 						//border-bottom: solid 1px #ddd;
-						color: $cc-lightBlue;
+						color: #888;
 						font-size: 1em;
 						text-decoration: none;
 						&.active {
-							color: $cc-darkBlue !important;
-							@include linear-gradient(bottom, #fff, whitesmoke);
-						}
-						&.add-code {
-							background-image: image-url("add-icon-blue.svg") !important;
-							background-size: 12px;
-							background-position: 7px center;
-							background-repeat: no-repeat;
-						}
-						&.languages {
-							background-image: image-url("languages-icon-blue.svg") !important;
-							background-size: 20px;
-							background-position: 7px center;
-							background-repeat: no-repeat;
-						}
-						&.collections {
-							background-image: image-url("collections-icon-blue.svg") !important;
-							background-size: 13px;
-							background-position: 10px center;
-							background-repeat: no-repeat;
+							color: $cc-lightBlue !important;
+							background: whitesmoke;
 						}
 						&:hover {
+							color: #666;
 							background-color: rgba(0,0,0,0.075);
 						}
 					}
