@@ -7,13 +7,18 @@
 
 		<div class="scrollable has-button">
 
-			
+			{{#if name}}
 			<h1>{{name}}</h1>
+			{{/if}}
+
+			{{#if description}}
 			<div>
 				<p class="description">
 					{{markdown description}}
 				</p>
 			</div>
+			{{/if}}
+
 			<!-- Bottom fixed button -->
 			<button class="create-button" {{action 'beginEditing'}}>
 				Edit {{name}}
