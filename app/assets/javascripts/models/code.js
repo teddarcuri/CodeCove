@@ -6,6 +6,6 @@ Codecove.Code = DS.Model.extend({
   description: DS.attr('string'),
   created_at: DS.attr('string'),
   updated_at: DS.attr('string'),
-  collections: DS.hasMany('collection', {async: true}),
-  languages: DS.hasMany('language', {async: true})
+  collection_ids: DS.hasMany('collection', {async: true}),
+  language_ids: DS.hasMany('language', {async: true})
 });

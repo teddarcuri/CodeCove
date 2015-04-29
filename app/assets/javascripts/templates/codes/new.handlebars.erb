@@ -32,7 +32,7 @@
 			{{#if languages}}
 			<div class="col-2">
 				<h3>Languages</h3>
-				{{view Ember.Select 
+				{{view "select" 
 					multiple="true"
 					content=languages
 					optionValuePath="content.id"
@@ -45,7 +45,7 @@
 			{{#if collections}}
 			<div class="col-2">
 				<h3>Collections</h3>
-				{{view Ember.Select 
+				{{view "select" 
 					multiple="true"
 					content=collections
 					optionValuePath="content.id"

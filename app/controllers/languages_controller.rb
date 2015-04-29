@@ -9,4 +9,9 @@ class LanguagesController < ApplicationController
         render json: Language.find(params[:id])
     end
 
+    private
+	def language
+		params[:language].permit(:name, {:code_ids => []})
+	end
+
 end

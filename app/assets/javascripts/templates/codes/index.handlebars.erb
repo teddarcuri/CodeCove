@@ -8,8 +8,17 @@
     </li>
     {{/each}}
 </ul>
+
 <div class="container codes">
+    {{#if this}}
 	{{#each}}
 		{{code-window name=name body=body code='code'}}
 	{{/each}}
+    {{else}}
+        <h3>It appears you haven't saved any code yet!</h3>
+        {{#link-to 'codes.new'}}
+            Click here to do that, dawg
+        {{/link-to}}
+    {{/if}}
+
 </div>  

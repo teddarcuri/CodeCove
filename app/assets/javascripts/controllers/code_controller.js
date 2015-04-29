@@ -10,13 +10,6 @@ Codecove.CodesNewController = Ember.ObjectController.extend({
 });
 
 /////////////////////////////////
-// All Codes
-////////////////////////////////
-Codecove.CodesController = Ember.ObjectController.extend({
-	showTileLayoutOptions: true,
-});
-
-/////////////////////////////////
 // Single Code
 ////////////////////////////////
 Codecove.CodeController = Ember.ObjectController.extend({
@@ -24,17 +17,13 @@ Codecove.CodeController = Ember.ObjectController.extend({
 	isEditing: false,
 
 	actions: {
-	    	sayHello: function() {
-	    		alert("OH HAIE!");
-	    	},
+    	beginEditing: function() {
+    		this.set("isEditing", true);
+    	},
 
-	    	beginEditing: function() {
-	    		this.set("isEditing", true);
-	    	},
-
-	    	doneEditing: function() {
-	    		this.set("isEditing", false);
-	    	},
-
-    	}
+    	doneEditing: function() {
+    		this.set("isEditing", false);
+    	},
+   }
+   
 });

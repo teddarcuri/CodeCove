@@ -16,7 +16,7 @@ class CodesController < ApplicationController
     end
 
     private
-		def code
-			params[:code].permit(:name, :description, :body)
-		end
+	def code
+		params[:code].permit(:name, :description, :body, :created_at, :updated_at, {:collection_ids => []}, {:language_ids => []})
+	end
 end
