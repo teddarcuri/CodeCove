@@ -34,10 +34,7 @@
 .code-window {
 	width: 100%; height: 100%;
 	display: inline-block;
-	//border-radius: 5px;
 	position: relative;
-	border-radius: 10px;
-	overflow: hidden;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
 	padding-top: 35px;
 
@@ -47,7 +44,6 @@
 		top: 0; left: 0;
 		background: url(../images/loading.gif) no-repeat center center rgba(255,255,255,0.9);
 		z-index: $z-console + 1;
-		border-radius: 10px 10px 0px 0px;
 	}
 
 	// Codemirror text area
@@ -75,9 +71,7 @@
 		width: 100%; height: 35px;
 		position: absolute;
 		top: 0;
-		//border-radius: 0px 0px 10px 10px;
-
-		@include linear-gradient(to top, $cc-lightBlue, lighten($cc-darkBlue, 30%) );
+		background: $cc-lightBlue;
 
 		.code-window-controls {
 			position: absolute;

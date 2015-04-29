@@ -52,9 +52,8 @@
 				overflow: hidden;
 				height: auto;
 				width: 300px;
-				//border: solid 2px #ccc;
 				border-top: 0px;
-				background: #eee;
+				background: #fff;
 				box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 				z-index: $z-infobar - 1;
 
@@ -68,17 +67,16 @@
 						min-width: 160px;
 						padding: 12px 20px 12px 20px;
 						display: block;
-						//border-bottom: solid 1px #ddd;
 						color: #888;
 						font-size: 1em;
 						text-decoration: none;
 						&.active {
-							color: $cc-lightBlue !important;
+							color: $cc-lightBlue;
 							background: whitesmoke;
 						}
 						&:hover {
-							color: #666;
-							background-color: rgba(0,0,0,0.075);
+							color: #fff !important;
+							background-color: $cc-lightBlue;
 						}
 					}
 				}
