@@ -5,7 +5,7 @@
 	position: absolute;
 	top: 0;
 	z-index: $z-infobar;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3	);
 	@include display(flex);
 	@include justify-content(space-between);
 
@@ -20,8 +20,32 @@
 		}
 		img {
 			position: relative;
-			height: 30px;
-			padding: 7px 20px;
+			height: $infobar-height;
+			padding: 12px 23px;
+		}
+	}
+
+	.profile-icon {
+		position: relative;
+		height: 100%;
+		display: inline-block;
+		cursor: pointer;
+		border-right: solid 1px darken($cc-grey, 10%);
+		padding: 0px 20px 0px 12px;
+		&:hover {
+			background: darken($cc-grey, 3%);
+			span {
+			}
+		}
+		img {
+			position: relative;
+			height: $infobar-height;
+			padding: 7px 8px;
+			border-radius: 200%;
+			vertical-align: middle;
+		}
+		span {
+			line-height: 0.25em;
 		}
 	}
 
