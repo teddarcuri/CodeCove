@@ -18,12 +18,14 @@
 // CSS Browser reset
 @import "config/normalize";
 
+@import "config/variables";
+
+
 // Bourbon Sass Library
 @import "bourbon";
 @import "neat";
 
 // Settings | Mixins, Variables
-@import "config/variables";
 @import "config/mixins";
 @import "config/fonts";
 @import "config/forms";
@@ -35,8 +37,10 @@
 @import "partials/search_overlay";
 
 // Components
+@import "components/alerts";
 @import "components/search_form";
 @import "components/code_window";
+@import "components/code_tile";
 @import "components/codemirror";
 @import "components/buttons";
 
@@ -58,12 +62,139 @@
     @include display(flex);
 }
 
+#search-input {
+    max-height: 70px;
+}
+
 .scrollable {
 	overflow: auto;
 	height: 100%;
-	padding: 20px;
+	//padding: 20px;
 	img {
 		width: 100%;
 	}
 
 }
+
+.padded {
+    padding: 20px;
+}
+
+.header-tools {
+    width: 100%;
+    height: $infobar-height;
+    background: #fff;
+    position: relative;
+    @include display(flex);
+
+
+    @include clearfix();
+
+   .name {
+        @include flex(1);
+        background: $cc-lightBlue;
+        font-size: 18px;
+        color: #fff;
+        height: $infobar-height;
+        position: relative;
+        display: inline-block;
+        padding: 0px 20px;
+        line-height: $infobar-height;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .back-btn {
+        background: image_url('back-btn.svg') #fff no-repeat 10px center;
+        background-size: 14px;
+        line-height: $infobar-height;
+        color: #888;
+        height: 100%;
+        width: auto;
+        padding: 0px 15px 0px 35px;
+        border-right: solid 1px #ddd;
+        @include flex-grow(0 !important);
+        @include align-self(flex-start);
+        &:hover {
+           background: image_url('back-btn-white.svg') $cc-lightBlue no-repeat 10px center;
+           background-size: 14px; 
+           line-height: $infobar-height;
+           color: #fff;
+           cursor: pointer;
+        }
+    }
+
+
+    .edit-btn {
+        background: image_url('edit-btn.svg') #fff no-repeat 88% center;
+        background-size: 14px;
+        line-height: $infobar-height;
+        color: #888;
+        height: 100%;
+        width: auto;
+        padding: 0px 35px 0px 15px;
+        border-left: solid 1px #ddd;
+        margin-left: auto;
+        &:hover {
+           background: image_url('edit-btn-white.svg') $cc-lightBlue no-repeat 88% center;
+           background-size: 14px; 
+           line-height: $infobar-height;
+           color: #fff;
+           cursor: pointer;
+        }
+    }
+
+    .save-btn {
+        background: image_url('save-btn-white.svg') $cc-lightBlue no-repeat 95% center;
+        background-size: 17px;
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px;
+        display: block;
+        margin-left: auto;
+        border: none;
+        outline: none;
+        span {
+            font-size: 18px;
+            color: #fff;
+            line-height: $infobar-height;
+        }
+
+        &:hover {
+           background: image_url('save-btn-white.svg') $cc-darkBlue no-repeat 95% center;
+           background-size: 17px; 
+           cursor: pointer;
+        }
+    }
+
+    .delete-btn {
+        background: image_url('delete-btn.svg') #fff no-repeat 88% center;
+        background-size: 14px;
+        line-height: $infobar-height;
+        color: #888;
+        height: 100%;
+        width: auto;
+        padding: 0px 35px 0px 15px;
+        border-left: solid 1px #ddd;
+        &:hover {
+           background: image_url('delete-btn-white.svg') #BC2222 no-repeat 88% center;
+           background-size: 14px; 
+           line-height: $infobar-height;
+           color: #fff;
+           cursor: pointer;
+        }
+    }
+}
+
+.container {
+   &.codes {
+        background: #fafafa;
+        h1 {
+            color: #ccc;
+            font-size: 7em;
+            margin: 10px 0px;
+        }
+    } 
+}
+

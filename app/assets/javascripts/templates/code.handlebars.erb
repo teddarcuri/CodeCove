@@ -4,36 +4,49 @@
 <form class="single-code-form" {{action 'update' this on='submit'}}>
 
 	<div class="col-side">
-
-		<div class="scrollable has-button">
-
-			{{#link-to "codes" class="btn btn-small"}}
-				<   Back to Code Snippets
-			{{/link-to}}
-
-			{{#if name}}
-			<h1>{{name}}</h1>
-			{{/if}}
-
-			{{#if description}}
-			<div>
-				<p class="description">
-					{{markdown description}}
-				</p>
+		<div class="scrollable">
+			<div class="header-tools editing">
+				{{#link-to "codes" title="Back To All Code Snippets" class="back-btn"}}
+				All Code
+				{{/link-to}}
+				<div title="Edit" class="edit-btn" {{action 'beginEditing'}}>
+					Edit
+				</div>
+				
+				<div title="Delete" class="delete-btn" {{action 'delete' this}}>
+					Delete
+				</div>
 			</div>
-			{{/if}}
 
-			<!-- Bottom fixed button -->
-			<button class="create-button" {{action 'beginEditing'}}>
-				Edit {{name}}
-			</button>
+			<div class="padded"> 
+
+				<h1>{{name}}</h1>
+
+				{{#if description}}
+				<div>
+					<p class="description">
+						{{markdown description}}
+					</p>
+				</div>
+				{{/if}}
+
+				<h3>Collections</h3>
+				{{#each collections}}
+					{{name}}
+				{{/each}}
+
+				<h3>Languages</h3>
+				{{#each languages}}
+					{{name}}
+				{{/each}}
+			</div>
 		</div>
-
 	</div>
 
 	<div class="col-code">
-		{{textarea value=body name="body" class='codemirror-textarea'}}
+		{{code-editor value=body}}
 	</div>
+
 </form>
 {{/if}}
 
