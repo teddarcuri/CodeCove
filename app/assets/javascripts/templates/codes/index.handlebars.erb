@@ -1,24 +1,11 @@
-<ul class="trench">
-    {{#each}}
-    <li>
-        {{#link-to 'code' this}}
-        <span class="name">{{name}}</span><br>
-        <span class="created-at">Created: {{format-date created_at}}</span>
-        {{/link-to}}
-    </li>
-    {{/each}}
-</ul>
-
-<div class="container codes">
-    {{#if this}}
+<div class="container codes padded">
 	{{#each}}
-		{{code-window name=name body=body code='code'}}
+	<div class="code-tile-wrapper">
+		<div class="code-tile">
+        {{#link-to 'code' this}}
+          {{name}}
+         {{/link-to}}
+      </div>
+	</div>
 	{{/each}}
-    {{else}}
-        <h3>It appears you haven't saved any code yet!</h3>
-        {{#link-to 'codes.new'}}
-            Click here to do that, dawg
-        {{/link-to}}
-    {{/if}}
-
 </div>  
