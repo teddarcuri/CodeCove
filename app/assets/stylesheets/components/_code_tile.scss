@@ -1,0 +1,46 @@
+$gutter: 0px !important;
+.code-tile-wrapper {
+	@include span-columns(2 of 10);
+	@include omega(5n);
+	//margin: 0px;
+	//padding: 0px 5px;
+
+	@include bp(1200) {
+		@include span-columns(4);
+		@include omega(3n);
+	}
+
+	@include bp(700) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+
+	@include bp(500) {
+		@include span-columns(12);
+		@include omega(1n);
+	}
+
+}
+
+.code-tile {
+	background: $cc-lightBlue;
+	color: #fff;
+	display: inline-block;
+	color: #fff;
+	border-radius: 5px;
+	margin: 5px 0px;
+	width: 100%;	
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+
+	&:hover {
+		background: $cc-darkBlue;
+	}
+	
+	a {
+		padding: 10px;
+		display: block;
+		color: #fff;
+	}
+}
