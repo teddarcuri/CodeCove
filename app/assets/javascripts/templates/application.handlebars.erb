@@ -2,7 +2,7 @@
 <div class="app-container">
 
 	<!-- Sidebar -->
-	<div id="sidebar">
+	<div id="sidebar" class="is-collapsed">
 	    {{#link-to 'codes.new'}}
 	    <div class="sidebar-item add">
 			<span class="item-name">Add Code</span>
@@ -26,7 +26,6 @@
 			<span class="item-name">Collections</span>
 		</div>
 	    {{/link-to}}
-
 	</div>
 	<!-- End Sidebar -->
 
@@ -37,15 +36,21 @@
 			<ul>
 				<li>
 				   <a title="Click to toggle the sidebar or simply press the Control key" class="sidebar-icon">
-		                <%= image_tag "full-screen-icon.svg"  %>
-		            	    </a>
+		             <%= image_tag "full-screen-icon.svg"  %>
+		          </a>
 				</li>
 				<li>
-					{{#link-to 'codes' class="home-icon"}}
-						<%= image_tag "home-icon.svg"  %>
+					{{#link-to 'codes' class="profile-icon"}}
+						<%= image_tag "avatar.jpg"  %>
+						<span>Happy {{get-current-day}}, Tedd!<span>
 					{{/link-to}}
 					<ul class="sub-menu">
-				        	<li>
+						<li>
+				        {{#link-to 'search'}}
+							Search
+				        {{/link-to}}
+						</li>
+				       <li>
 				        	{{#link-to 'codes.new' class="add-code"}}
 							Add Code
 						{{/link-to}}
@@ -53,7 +58,7 @@
 
 						<li>
 				        	{{#link-to 'codes' class="add-code"}}
-							Code Snippets
+							All Snippets
 						{{/link-to}}
 						</li>
 
@@ -71,24 +76,12 @@
 
 						<li>
 				        {{#link-to 'about' class="collections"}}
-							About
+							About CodeCove
 				        {{/link-to}}
 						</li>
 					</ul>
 				</li>
 			</ul>
-
-			<!-- <span class="breadcrumbs">Home > My Collections > Ruby Active Record Serializers</span> -->
-
-		  {{#if showTileLayoutOptions}}
-		  <div class="layout-options">
-		         <div class="one-column"></div>
-			<div class="two-column"></div>
-			<div class="three-column active"></div>
-		  </div>
-		  {{else}}
-		  	false
-		  {{/if}}
 		</div>
 		<!-- End Info Bar -->
 
@@ -108,38 +101,19 @@
 
 				<!-- Search Form -->
 				<form id="search" action="">
-					<input type="text" class="search" name="search" placeholder="SEARCH">
+					{{input type="text" class="search" name="search" placeholder="SEARCH" value=searchText focus-in='goToSearch'}}
 					<div class="react-circle"></div>
 				</form>
 
-
-				<!-- Welcome/Login Message -->
-				<div class="profile-utilities">
-					<p class="welcome-message">
-						Welcome back, Tedd!
-						<%= image_tag "gear-icon.svg" %>
-					</p>
-				</div>
 			</div>
 			<!-- End Utility Belt -->
-
-			<!-- Toolbar -->
-			<div id="toolbar-wrap">
-				<div id="toolbar">
-					<div class="tool-item add"><p>Add To Collection</div>
-					<div class="tool-item edit"><p>Edit Collection</div>
-					<div class="tool-item pin"><p>Pin Collection to Sidebar</div>
-					<div class="tool-item info"><p>Collection Information</div>
-					<div class="tool-item grid"><p>Snap to Grid</div>
-				</div>
-			</div>
-
-			<!-- Utility Box -->
-			<div class="utilities">
-			</div>
-
 		</div>
 		<!-- End Utility Wrap -->
+	</div>
+
+	<!-- Alert and Notification -->
+	<div id="alert-box">
+		Some alert showing here
 	</div>
 
 </div><!-- End App Container -->
